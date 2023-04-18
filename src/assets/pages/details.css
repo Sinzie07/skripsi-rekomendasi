@@ -1,0 +1,44 @@
+.details-page {
+  min-height: 100vh;
+  align-items: center;
+  background-color: burlywood;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.details-information {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.details-wrappers {
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.details-photo-cards {
+  height: 400px;
+  width: 50%;
+  gap: 1rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  animation: ease-in;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 20px;
+}
+
+.details-photo-cards .photo-details {
+  width: 50%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

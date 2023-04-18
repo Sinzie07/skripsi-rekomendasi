@@ -1,0 +1,43 @@
+.about-page {
+  min-height: 100vh;
+  align-items: center;
+  background-color: burlywood;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-about {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.content-about {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.content-about h1 {
+  font-size: 60px;
+}
+
+.content-about h2 {
+  font-size: 40px;
+  padding-top: 7.05rem;
+  padding-bottom: 5rem;
+}
+
+.content-about p {
+  font-size: 30px;
+  padding-bottom: 1rem;
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img {
+  width: 15rem;
+  height: 20rem;
+}
