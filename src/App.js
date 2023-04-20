@@ -8,6 +8,15 @@ import Rekomendasi from "./pages/Rekomendasi";
 import Login from "./admin/login";
 import UserPage from "./admin/userpage";
 import Detailsatu from "./components/detail/Detailsatu";
+import Detaildua from "./components/detail/Detaildua";
+import Detailtiga from "./components/detail/Detailtiga";
+import Detailempat from "./components/detail/Detailempat";
+import Detaillima from "./components/detail/Detaillima";
+import Detailenam from "./components/detail/Detailenam";
+import Detailtujuh from "./components/detail/Detailtujuh";
+import Detaillapan from "./components/detail/Detaillapan";
+import Detailsembilan from "./components/detail/Detailsembilan";
+import Homeadmin from "././admin/adminhome";
 
 function App() {
   return (
@@ -21,6 +30,15 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/viewuser" element={<UserPage />} />
         <Route path="/detailtridi" element={<Detailsatu />} />
+        <Route path="/detailarvr" element={<Detaildua />} />
+        <Route path="/detailblockchain" element={<Detailtiga />} />
+        <Route path="/detailcloudsecurity" element={<Detailempat />} />
+        <Route path="/detailsociety" element={<Detaillima />} />
+        <Route path="/detailfirewall" element={<Detailenam />} />
+        <Route path="/detailmobile" element={<Detailtujuh />} />
+        <Route path="/detailmultimedia" element={<Detaillapan />} />
+        <Route path="/detailparalel" element={<Detailsembilan />} />
+        <Route path="/homeadmin" element={<Homeadmin />} />
       </Routes>
     </Router>
   );

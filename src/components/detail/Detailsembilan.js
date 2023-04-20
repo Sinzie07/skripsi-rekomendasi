@@ -1,24 +1,24 @@
-import tridigame from "../../images/3dgame.jpg";
+import paralel from "../../images/paralelprocessing.png";
 import "../../assets/pages/details.css";
 
-function Detailsatu() {
+function Detailsembilan() {
   return (
     <main className="details-page">
+      <a href="/information" className="back-button">
+        Back
+      </a>
       <div className="details-information">
-        <a href="/information" className="back-button">
-          Back
-        </a>
         <h1>Details Peminatan</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
             <div
               className="photo-details"
-              style={{ backgroundImage: `url(${tridigame})` }}
+              style={{ backgroundImage: `url(${paralel})` }}
             >
               {""}
             </div>
             <div className="details-cards-title">
-              <h1>3D Game Design and Development</h1>
+              <h1>Paralel Processing</h1>
             </div>
             <div className="details-cards-content">
               <h2>Description:</h2>
@@ -39,4 +39,4 @@ function Detailsatu() {
   );
 }
 
-export default Detailsatu;
+export default Detailsembilan;

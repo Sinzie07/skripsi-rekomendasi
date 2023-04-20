@@ -4,10 +4,17 @@ import "../../src/assets/pages/login.css";
 function LoginPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log("Username:", username, "Password:", password);
+    if (username === "sinzie" && password === "sinzie123") {
+      //redirect to dashboard page
+      window.location.href = "/homeadmin";
+    } else {
+      //display error message
+      setErrorMessage("Incorrect username or password");
+    }
   };
 
   return (
@@ -30,8 +37,14 @@ function LoginPage() {
       </div>
       <button type="submit" className="button-submit">
         {" "}
-        Submit
+        Login
       </button>
+      <div className="error-message">
+        {errorMessage && <p>{errorMessage}</p>}
+        {errorMessage && (
+          <button onClick={() => setErrorMessage("")}>Try Again</button>
+        )}
+      </div>
     </form>
   );
 }

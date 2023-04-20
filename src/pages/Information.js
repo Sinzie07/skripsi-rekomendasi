@@ -37,7 +37,7 @@ const Information = () => {
           </div>
         </Link>
 
-        <Link to="/about">
+        <Link to="/detailarvr">
           <div className="peminatan-photo-cards">
             <div
               className="photo-peminatan"
@@ -54,7 +54,7 @@ const Information = () => {
           </div>
         </Link>
 
-        <Link to="/about">
+        <Link to="/detailblockchain">
           <div className="peminatan-photo-cards">
             <div
               className="photo-peminatan"
@@ -71,7 +71,7 @@ const Information = () => {
           </div>
         </Link>
 
-        <Link to="/about">
+        <Link to="/detailcloudsecurity">
           <div className="peminatan-photo-cards">
             <div
               className="photo-peminatan"
@@ -88,7 +88,7 @@ const Information = () => {
           </div>
         </Link>
 
-        <Link to="/about">
+        <Link to="/detailsociety">
           <div className="peminatan-photo-cards">
             <div
               className="photo-peminatan"
@@ -105,7 +105,7 @@ const Information = () => {
           </div>
         </Link>
 
-        <Link to="/about">
+        <Link to="/detailfirewall">
           <div className="peminatan-photo-cards">
             <div
               className="photo-peminatan"
@@ -122,7 +122,7 @@ const Information = () => {
           </div>
         </Link>
 
-        <Link to="/about">
+        <Link to="/detailmobile">
           <div className="peminatan-photo-cards">
             <div
               className="photo-peminatan"
@@ -141,7 +141,7 @@ const Information = () => {
           </div>
         </Link>
 
-        <Link to="/about">
+        <Link to="/detailmultimedia">
           <div className="peminatan-photo-cards">
             <div
               className="photo-peminatan"
@@ -158,7 +158,7 @@ const Information = () => {
           </div>
         </Link>
 
-        <Link to="/about">
+        <Link to="/detailparalel">
           <div className="peminatan-photo-cards">
             <div
               className="photo-peminatan"
