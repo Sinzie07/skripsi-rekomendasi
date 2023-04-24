@@ -88,3 +88,28 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media only screen and (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+  }
+  .content,
+  .right-hero {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right-hero {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .content {
+    padding: 0 20px;
+  }
+
+  .right-hero {
+    margin-top: 20px;
+  }
+}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../src/assets/pages/login.css";
+import adminImage from "../../src/images/admin.png";
 
 function LoginPage() {
   const [username, setUsername] = useState("");
@@ -18,34 +19,36 @@ function LoginPage() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Username:</label>
-        <input
-          type="text"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
+    <div className="login-page">
+      <div className="login-form-container">
+        <img src={adminImage} alt="Admin Icon" className="admin-icon" />
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label>Username:</label>
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
+          <div>
+            <label>Password:</label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          <button type="submit" className="button-login">
+            {" "}
+            Login
+          </button>
+          <div className="error-message">
+            {errorMessage && <p>{errorMessage}</p>}
+          </div>
+        </form>
       </div>
-      <div>
-        <label>Password:</label>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </div>
-      <button type="submit" className="button-submit">
-        {" "}
-        Login
-      </button>
-      <div className="error-message">
-        {errorMessage && <p>{errorMessage}</p>}
-        {errorMessage && (
-          <button onClick={() => setErrorMessage("")}>Try Again</button>
-        )}
-      </div>
-    </form>
+    </div>
   );
 }
 

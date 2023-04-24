@@ -1,16 +1,24 @@
 import paralel from "../../images/paralelprocessing.png";
 import "../../assets/pages/details.css";
+import { Link } from "react-router-dom";
+import Navbar from "../global/Navbar";
 
 function Detailsembilan() {
   return (
     <main className="details-page">
-      <a href="/information" className="back-button">
-        Back
-      </a>
+      <Navbar />
       <div className="details-information">
         <h1>Details Peminatan</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
+            <div className="details-navigation">
+              <Link to="/detailmultimedia">
+                <button className="details-navigation-backbutton">Back</button>
+              </Link>
+              <Link to="/detailtridi">
+                <button className="details-navigation-nextbutton">Next</button>
+              </Link>
+            </div>
             <div
               className="photo-details"
               style={{ backgroundImage: `url(${paralel})` }}

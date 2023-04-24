@@ -1,34 +1,25 @@
-import tridigame from "../../images/3dgame.jpg";
+import paralel from "../../images/paralelprocessing.png";
 import "../../assets/pages/details.css";
-import Navbar from "../global/Navbar";
-import { Link } from "react-router-dom";
 
-function Detailsatu() {
+function resultdetailsembilan() {
   return (
     <main className="details-page">
-      <Navbar />
+      <a href="/information" className="back-button">
+        Back
+      </a>
       <div className="details-information">
         <h1>Details Peminatan</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
-            <div className="details-navigation">
-              <Link to="/detailparalel">
-                <button className="details-navigation-backbutton">Back</button>
-              </Link>
-              <Link to="/detailarvr">
-                <button className="details-navigation-nextbutton">Next</button>
-              </Link>
-            </div>
             <div
               className="photo-details"
-              style={{ backgroundImage: `url(${tridigame})` }}
+              style={{ backgroundImage: `url(${paralel})` }}
             >
               {""}
             </div>
             <div className="details-cards-title">
-              <h1>3D Game Design and Development</h1>
+              <h1>Paralel Processing</h1>
             </div>
-
             <div className="details-cards-content">
               <h2>Description:</h2>
               <p>
@@ -48,4 +39,4 @@ function Detailsatu() {
   );
 }
 
-export default Detailsatu;
+export default resultdetailsembilan;

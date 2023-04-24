@@ -1,7 +1,12 @@
 import React from "react";
 import "../assets/pages/adminhome.css";
+import exitButton from "../../src/images/logout.png";
 
 function Adminhome() {
+  const handleLogout = () => {
+    window.location.href = "/login";
+  };
+
   return (
     <div className="admin-home">
       <h1>Welcome back Admin!</h1>
@@ -16,6 +21,12 @@ function Adminhome() {
           <button className="add-button">Add New Rekomendasi</button>
         </a>
       </div>
+      <img
+        src={exitButton}
+        alt="Exit Button"
+        className="exit-button"
+        onClick={handleLogout}
+      />
     </div>
   );
 }

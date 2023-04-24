@@ -1,24 +1,13 @@
 import cloudsecurity from "../../images/cloudsecurity.jpg";
 import "../../assets/pages/details.css";
-import { Link } from "react-router-dom";
-import Navbar from "../global/Navbar";
 
-function Detailempat() {
+function resultdetailempat() {
   return (
     <main className="details-page">
-      <Navbar />
       <div className="details-information">
         <h1>Details Peminatan</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
-            <div className="details-navigation">
-              <Link to="/detailblockchain">
-                <button className="details-navigation-backbutton">Back</button>
-              </Link>
-              <Link to="/detailsociety">
-                <button className="details-navigation-nextbutton">Next</button>
-              </Link>
-            </div>
             <div
               className="photo-details"
               style={{ backgroundImage: `url(${cloudsecurity})` }}
@@ -58,4 +47,4 @@ function Detailempat() {
   );
 }
 
-export default Detailempat;
+export default resultdetailempat;

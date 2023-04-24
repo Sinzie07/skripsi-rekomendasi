@@ -1,24 +1,13 @@
 import tridigame from "../../images/3dgame.jpg";
 import "../../assets/pages/details.css";
-import Navbar from "../global/Navbar";
-import { Link } from "react-router-dom";
 
-function Detailsatu() {
+function resultdetailsatu() {
   return (
     <main className="details-page">
-      <Navbar />
       <div className="details-information">
         <h1>Details Peminatan</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
-            <div className="details-navigation">
-              <Link to="/detailparalel">
-                <button className="details-navigation-backbutton">Back</button>
-              </Link>
-              <Link to="/detailarvr">
-                <button className="details-navigation-nextbutton">Next</button>
-              </Link>
-            </div>
             <div
               className="photo-details"
               style={{ backgroundImage: `url(${tridigame})` }}
@@ -48,4 +37,4 @@ function Detailsatu() {
   );
 }
 
-export default Detailsatu;
+export default resultdetailsatu;

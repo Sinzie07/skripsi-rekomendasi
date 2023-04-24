@@ -9,11 +9,9 @@ const Hero = () => {
         <div>
           <h1>Choose The Right Subject Of Interest</h1>
           <div className="button_container">
-            <button className="main__btn">
-              <a href="rekomendasi" class="getrekomen">
-                Get Rekomendasi
-              </a>
-            </button>
+            <a href="rekomendasi" class="getrekomen">
+              <button className="main__btn">Get Rekomendasi</button>
+            </a>
           </div>
           <Cards />
         </div>

@@ -1,24 +1,16 @@
 import konmul from "../../images/multimediaconcept.jpg";
 import "../../assets/pages/details.css";
-import { Link } from "react-router-dom";
-import Navbar from "../global/Navbar";
 
-function Detaillapan() {
+function resultdetaillapan() {
   return (
     <main className="details-page">
-      <Navbar />
+      <a href="/information" className="back-button">
+        Back
+      </a>
       <div className="details-information">
         <h1>Details Peminatan</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
-            <div className="details-navigation">
-              <Link to="/detailmobile">
-                <button className="details-navigation-backbutton">Back</button>
-              </Link>
-              <Link to="/detailparalel">
-                <button className="details-navigation-nextbutton">Next</button>
-              </Link>
-            </div>
             <div
               className="photo-details"
               style={{ backgroundImage: `url(${konmul})` }}
@@ -51,4 +43,4 @@ function Detaillapan() {
   );
 }
 
-export default Detaillapan;
+export default resultdetaillapan;

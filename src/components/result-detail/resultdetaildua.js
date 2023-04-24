@@ -1,24 +1,14 @@
 import arvr from "../../images/arvrgame.png";
 import "../../assets/pages/details.css";
 import { Link } from "react-router-dom";
-import Navbar from "../global/Navbar";
 
-function Detaildua() {
+function resultdetaildua() {
   return (
     <main className="details-page">
-      <Navbar />
       <div className="details-information">
         <h1>Details Peminatan</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
-            <div className="details-navigation">
-              <Link to="/detailtridi">
-                <button className="details-navigation-backbutton">Back</button>
-              </Link>
-              <Link to="/detailblockchain">
-                <button className="details-navigation-nextbutton">Next</button>
-              </Link>
-            </div>
             <div
               className="photo-details"
               style={{ backgroundImage: `url(${arvr})` }}
@@ -46,4 +36,4 @@ function Detaildua() {
   );
 }
 
-export default Detaildua;
+export default resultdetaildua;

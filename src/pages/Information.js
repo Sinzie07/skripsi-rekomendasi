@@ -31,9 +31,6 @@ const Information = () => {
             <div className="peminatan-photo-cards-title">
               <h3>3D Games</h3>
             </div>
-            <div className="peminatan-photo-cards-content">
-              <p>Membuat design game 3D dengan menggunakan Unity</p>
-            </div>
           </div>
         </Link>
 
@@ -47,9 +44,6 @@ const Information = () => {
             </div>
             <div className="peminatan-photo-cards-title">
               <h3>ARVR Games</h3>
-            </div>
-            <div className="peminatan-photo-cards-content">
-              <p>Membuat design game ARVR dengan menggunakan Unity</p>
             </div>
           </div>
         </Link>
@@ -65,9 +59,6 @@ const Information = () => {
             <div className="peminatan-photo-cards-title">
               <h3>Blockchain</h3>
             </div>
-            <div className="peminatan-photo-cards-content">
-              <p>Mempelajari Blockchain dan Cryptocurrency</p>
-            </div>
           </div>
         </Link>
 
@@ -81,9 +72,6 @@ const Information = () => {
             </div>
             <div className="peminatan-photo-cards-title">
               <h3>Cybersecurity:CloudSecurity</h3>
-            </div>
-            <div className="peminatan-photo-cards-content">
-              <p>Mempelajari cloud security</p>
             </div>
           </div>
         </Link>
@@ -99,9 +87,6 @@ const Information = () => {
             <div className="peminatan-photo-cards-title">
               <h3>Computer Society</h3>
             </div>
-            <div className="peminatan-photo-cards-content">
-              <p>Mendalami Computer society yang ada dilingkungan</p>
-            </div>
           </div>
         </Link>
 
@@ -115,9 +100,6 @@ const Information = () => {
             </div>
             <div className="peminatan-photo-cards-title">
               <h3>Computer Security Firewall</h3>
-            </div>
-            <div className="peminatan-photo-cards-content">
-              <p>Mempelajari configurasi firewall yang ada</p>
             </div>
           </div>
         </Link>
@@ -133,11 +115,6 @@ const Information = () => {
             <div className="peminatan-photo-cards-title">
               <h3>Mobile Programming</h3>
             </div>
-            <div className="peminatan-photo-cards-content">
-              <p>
-                Mempelajari mobile programming untuk menjadi mobile developer
-              </p>
-            </div>
           </div>
         </Link>
 
@@ -151,9 +128,6 @@ const Information = () => {
             </div>
             <div className="peminatan-photo-cards-title">
               <h3>Multimedia Concept</h3>
-            </div>
-            <div className="peminatan-photo-cards-content">
-              <p>Belajar mengenai konsep-konsep multimedia yang ada di dunia</p>
             </div>
           </div>
         </Link>
@@ -169,9 +143,7 @@ const Information = () => {
             <div className="peminatan-photo-cards-title">
               <h3>Paralel Processing</h3>
             </div>
-            <div className="peminatan-photo-cards-content">
-              <p>Mempelajari cara sistem mengerjakan 2 task sekaligus</p>
-            </div>
+            <div className="peminatan-photo-cards-content"></div>
           </div>
         </Link>
       </div>

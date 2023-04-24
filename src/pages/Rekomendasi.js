@@ -8,6 +8,15 @@ const Rekomendasi = () => {
     question2: null,
     question3: null,
     question4: null,
+    question5: null,
+    question6: null,
+    question7: null,
+    question8: null,
+    question9: null,
+    question10: null,
+    question11: null,
+    question12: null,
+    question13: null,
   });
 
   const handleChange = (event) => {
@@ -22,8 +31,15 @@ const Rekomendasi = () => {
   return (
     <>
       <Navbar />
+      <div>
+        <h1 className="title-getrekomen">Get Rekomendasi</h1>
+      </div>
       <form onSubmit={handleSubmit}>
         <div>
+          <label htmlFox="questionName">Nama Anda:</label>
+          <div className="pertanyaan-nama">
+            <input type="text" name="questionName" onChange={handleChange} />
+          </div>
           <label htmlFox="question1">
             {" "}
             Berapakah nilai anda dalam mata kuliah IF 433 Object Oriented
@@ -710,20 +726,9 @@ const Rekomendasi = () => {
             <label htmlFor="5">5</label>
           </div>
         </div>
+        <button type="submit">Submit</button>
       </form>
     </>
-  );
-  return (
-    <main className="rekomendasi-page">
-      <div>
-        <h1>Get Rekomendasi</h1>
-      </div>
-      <div className="form-container">
-        <div className="form-content">
-          <div className="form-input"></div>
-        </div>
-      </div>
-    </main>
   );
 };
 

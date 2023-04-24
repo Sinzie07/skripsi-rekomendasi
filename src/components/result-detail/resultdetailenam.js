@@ -1,24 +1,16 @@
 import firewall from "../../images/firewall.jpg";
 import "../../assets/pages/details.css";
-import { Link } from "react-router-dom";
-import Navbar from "../global/Navbar";
 
-function Detailenam() {
+function resultdetailenam() {
   return (
     <main className="details-page">
-      <Navbar />
+      <a href="/information" className="back-button">
+        Back
+      </a>
       <div className="details-information">
         <h1>Details Peminatan</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
-            <div className="details-navigation">
-              <Link to="/detailsociety">
-                <button className="details-navigation-backbutton">Back</button>
-              </Link>
-              <Link to="/detailmobile">
-                <button className="details-navigation-nextbutton">Next</button>
-              </Link>
-            </div>
             <div
               className="photo-details"
               style={{ backgroundImage: `url(${firewall})` }}
@@ -50,4 +42,4 @@ function Detailenam() {
   );
 }
 
-export default Detailenam;
+export default resultdetailenam;

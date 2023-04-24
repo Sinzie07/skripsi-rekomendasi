@@ -1,24 +1,16 @@
 import society from "../../images/computersociety.jpg";
 import "../../assets/pages/details.css";
-import { Link } from "react-router-dom";
-import Navbar from "../global/Navbar";
 
-function Detaillima() {
+function resultdetaillima() {
   return (
     <main className="details-page">
-      <Navbar />
+      <a href="/information" className="back-button">
+        Back
+      </a>
       <div className="details-information">
         <h1>Details Peminatan</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
-            <div className="details-navigation">
-              <Link to="/detailcloudsecurity">
-                <button className="details-navigation-backbutton">Back</button>
-              </Link>
-              <Link to="/detailfirewall">
-                <button className="details-navigation-nextbutton">Next</button>
-              </Link>
-            </div>
             <div
               className="photo-details"
               style={{ backgroundImage: `url(${society})` }}
@@ -52,4 +44,4 @@ function Detaillima() {
   );
 }
 
-export default Detaillima;
+export default resultdetaillima;
