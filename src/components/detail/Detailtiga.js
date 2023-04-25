@@ -29,6 +29,8 @@ function Detailtiga() {
               <h1>Blockchain and Cryptocurrency</h1>
             </div>
             <div className="details-cards-content">
+              <h2>Difficulty:</h2>
+              <div className="stars">★★★</div>
               <h2>Description:</h2>
               <p>
                 This course explores the potential use of blockchain technology

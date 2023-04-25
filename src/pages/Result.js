@@ -1,6 +1,9 @@
-import { useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
+import { AlternativeContext } from "../context/AlternativeContext";
 
 const Result = () => {
+  const { alternative } = useContext(AlternativeContext);
+
   const bobotAhp = {
     prospek: 0.227628874,
     kesulitan: 0.046848607,
@@ -21,28 +24,41 @@ const Result = () => {
   };
 
   function hitungnilaiSWP() {
-    let hasil = new Object();
+    let hasil = {};
     let total = 0;
-    for (const key in matrix_wp) {
-      const item = matrix_wp[key];
 
+    alternative.forEach((item) => {
       const nilai_s =
-        Math.pow(item[0], bobotAhp.prospek) *
-        Math.pow(item[1], -bobotAhp.kesulitan) *
-        Math.pow(item[2], -bobotAhp.nilai_sebelum) *
-        Math.pow(item[3], bobotAhp.minat);
+        Math.pow(item.bobotWP.prospek, bobotAhp.prospek) *
+        Math.pow(item.bobotWP.kesulitan, -bobotAhp.kesulitan) *
+        Math.pow(item.bobotWP.nilai_sebelum, -bobotAhp.nilai_sebelum) *
+        Math.pow(item.bobotWP.minat, bobotAhp.minat);
 
       total += nilai_s;
 
-      hasil[key] = nilai_s;
-    }
+      hasil[item.id] = nilai_s;
+    });
+
+    // for (const key in matrix_wp) {
+    //   const item = matrix_wp[key];
+
+    //   const nilai_s =
+    //     Math.pow(item[0], bobotAhp.prospek) *
+    //     Math.pow(item[1], -bobotAhp.kesulitan) *
+    //     Math.pow(item[2], -bobotAhp.nilai_sebelum) *
+    //     Math.pow(item[3], bobotAhp.minat);
+
+    //   total += nilai_s;
+
+    //   hasil[key] = nilai_s;
+    // }
 
     return [hasil, total];
   }
 
   function hitungRankingWP() {
     let [hasil_s, total_s] = hitungnilaiSWP();
-    let ranking = new Object();
+    let ranking = {};
 
     for (const key in hasil_s) {
       const item = hasil_s[key];
@@ -54,9 +70,12 @@ const Result = () => {
   }
 
   useEffect(() => {
+    const [hasil_s, nilai_s] = hitungnilaiSWP();
     const result = hitungRankingWP();
 
-    console.log(result.cross);
+    console.log(hasil_s);
+    console.log(nilai_s);
+    console.log(result);
   }, []);
 
   return (

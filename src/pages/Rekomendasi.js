@@ -1,32 +1,46 @@
 import Navbar from "../components/global/Navbar";
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
 import "../../src/assets/pages/rekomendasi.css";
+import { AlternativeContext } from "../context/AlternativeContext";
 
 const Rekomendasi = () => {
+  const { alternative, setAlternativeData } = useContext(AlternativeContext);
+  const navigate = useNavigate();
+
   const [answers, setAnswers] = useState({
-    question1: null,
-    question2: null,
-    question3: null,
-    question4: null,
-    question5: null,
-    question6: null,
-    question7: null,
-    question8: null,
-    question9: null,
-    question10: null,
-    question11: null,
-    question12: null,
-    question13: null,
+    oop: 0,
+    data_structure: 0,
+    algoritma: 0,
+    computer_security: 0,
+    game3d: 0,
+    gamearvr: 0,
+    cross: 0,
+    blockchain: 0,
+    cyber_firewall: 0,
+    cyber_cloud: 0,
+    compas: 0,
+    multimedia: 0,
+    paralel: 0,
   });
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setAnswers({ ...answers, [name]: value });
-  };
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(answers);
-  };
+  const [oop, setOOP] = useState(0);
+  const [dataStruture, setDataStructure] = useState(0);
+  const [algoritma, setAlgoritma] = useState(0);
+  const [computerSecurity, setComputerSecurity] = useState(0);
+  const [game3d, setGame3d] = useState(0);
+  const [gameARVR, setGameARVR] = useState(0);
+  const [cross, setCross] = useState(0);
+  const [blockchain, setBlockchain] = useState(0);
+  const [cyberFirewall, setCyberFirewall] = useState(0);
+  const [cyberCloud, setCyberCloud] = useState(0);
+  const [compas, setCompas] = useState(0);
+  const [multimedia, setMultimedia] = useState(0);
+  const [paralel, setParalel] = useState(0);
+
+  useEffect(() => {
+    console.log(alternative);
+  }, [alternative]);
 
   return (
     <>
@@ -34,11 +48,11 @@ const Rekomendasi = () => {
       <div>
         <h1 className="title-getrekomen">Get Rekomendasi</h1>
       </div>
-      <form onSubmit={handleSubmit}>
+      <div>
         <div>
           <label htmlFox="questionName">Nama Anda:</label>
           <div className="pertanyaan-nama">
-            <input type="text" name="questionName" onChange={handleChange} />
+            <input type="text" name="questionName" />
           </div>
           <label htmlFox="question1">
             {" "}
@@ -50,7 +64,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question1"
               value="1"
-              onChange={handleChange}
+              onChange={(event) => {
+                setOOP(event.target.value);
+              }}
             />
             <label htmlFor="1">C</label>
           </div>
@@ -59,7 +75,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question1"
               value="2"
-              onChange={handleChange}
+              onChange={(event) => {
+                setOOP(event.target.value);
+              }}
             />
             <label htmlFor="2">B</label>
           </div>
@@ -68,7 +86,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question1"
               value="3"
-              onChange={handleChange}
+              onChange={(event) => {
+                setOOP(event.target.value);
+              }}
             />
             <label htmlFor="3">B+</label>
           </div>
@@ -77,7 +97,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question1"
               value="4"
-              onChange={handleChange}
+              onChange={(event) => {
+                setOOP(event.target.value);
+              }}
             />
             <label htmlFor="4">A-</label>
           </div>
@@ -86,7 +108,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question1"
               value="5"
-              onChange={handleChange}
+              onChange={(event) => {
+                setOOP(event.target.value);
+              }}
             />
             <label htmlFor="5">A</label>
           </div>
@@ -103,7 +127,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question2"
               value="1"
-              onChange={handleChange}
+              onChange={(event) => {
+                setDataStructure(event.target.value);
+              }}
             />
             <label htmlFor="1">C</label>
           </div>
@@ -112,7 +138,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question2"
               value="2"
-              onChange={handleChange}
+              onChange={(event) => {
+                setDataStructure(event.target.value);
+              }}
             />
             <label htmlFor="2">B</label>
           </div>
@@ -121,7 +149,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question2"
               value="3"
-              onChange={handleChange}
+              onChange={(event) => {
+                setDataStructure(event.target.value);
+              }}
             />
             <label htmlFor="3">B+</label>
           </div>
@@ -130,7 +160,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question2"
               value="4"
-              onChange={handleChange}
+              onChange={(event) => {
+                setDataStructure(event.target.value);
+              }}
             />
             <label htmlFor="4">A-</label>
           </div>
@@ -139,7 +171,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question2"
               value="5"
-              onChange={handleChange}
+              onChange={(event) => {
+                setDataStructure(event.target.value);
+              }}
             />
             <label htmlFor="5">A</label>
           </div>
@@ -156,7 +190,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question3"
               value="1"
-              onChange={handleChange}
+              onChange={(event) => {
+                setAlgoritma(event.target.value);
+              }}
             />
             <label htmlFor="1">C</label>
           </div>
@@ -165,7 +201,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question3"
               value="2"
-              onChange={handleChange}
+              onChange={(event) => {
+                setAlgoritma(event.target.value);
+              }}
             />
             <label htmlFor="2">B</label>
           </div>
@@ -174,7 +212,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question3"
               value="3"
-              onChange={handleChange}
+              onChange={(event) => {
+                setAlgoritma(event.target.value);
+              }}
             />
             <label htmlFor="3">B+</label>
           </div>
@@ -183,7 +223,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question3"
               value="4"
-              onChange={handleChange}
+              onChange={(event) => {
+                setAlgoritma(event.target.value);
+              }}
             />
             <label htmlFor="4">A-</label>
           </div>
@@ -192,7 +234,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question3"
               value="5"
-              onChange={handleChange}
+              onChange={(event) => {
+                setAlgoritma(event.target.value);
+              }}
             />
             <label htmlFor="5">A</label>
           </div>
@@ -208,7 +252,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question4"
               value="1"
-              onChange={handleChange}
+              onChange={(event) => {
+                setComputerSecurity(event.target.value);
+              }}
             />
             <label htmlFor="1">C</label>
           </div>
@@ -217,7 +263,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question4"
               value="2"
-              onChange={handleChange}
+              onChange={(event) => {
+                setComputerSecurity(event.target.value);
+              }}
             />
             <label htmlFor="2">B</label>
           </div>
@@ -226,7 +274,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question4"
               value="3"
-              onChange={handleChange}
+              onChange={(event) => {
+                setComputerSecurity(event.target.value);
+              }}
             />
             <label htmlFor="3">B+</label>
           </div>
@@ -235,7 +285,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question4"
               value="4"
-              onChange={handleChange}
+              onChange={(event) => {
+                setComputerSecurity(event.target.value);
+              }}
             />
             <label htmlFor="4">A-</label>
           </div>
@@ -244,7 +296,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question4"
               value="5"
-              onChange={handleChange}
+              onChange={(event) => {
+                setComputerSecurity(event.target.value);
+              }}
             />
             <label htmlFor="5">A</label>
           </div>
@@ -261,7 +315,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question5"
               value="1"
-              onChange={handleChange}
+              onChange={(event) => {
+                setGame3d(event.target.value);
+              }}
             />
             <label htmlFor="1">1</label>
           </div>
@@ -270,7 +326,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question5"
               value="2"
-              onChange={handleChange}
+              onChange={(event) => {
+                setGame3d(event.target.value);
+              }}
             />
             <label htmlFor="2">2</label>
           </div>
@@ -279,7 +337,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question5"
               value="3"
-              onChange={handleChange}
+              onChange={(event) => {
+                setGame3d(event.target.value);
+              }}
             />
             <label htmlFor="3">3</label>
           </div>
@@ -288,7 +348,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question5"
               value="4"
-              onChange={handleChange}
+              onChange={(event) => {
+                setGame3d(event.target.value);
+              }}
             />
             <label htmlFor="4">4</label>
           </div>
@@ -297,7 +359,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question5"
               value="5"
-              onChange={handleChange}
+              onChange={(event) => {
+                setGame3d(event.target.value);
+              }}
             />
             <label htmlFor="5">5</label>
           </div>
@@ -314,7 +378,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question6"
               value="1"
-              onChange={handleChange}
+              onChange={(event) => {
+                setGameARVR(event.target.value);
+              }}
             />
             <label htmlFor="1">1</label>
           </div>
@@ -323,7 +389,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question6"
               value="2"
-              onChange={handleChange}
+              onChange={(event) => {
+                setGameARVR(event.target.value);
+              }}
             />
             <label htmlFor="2">2</label>
           </div>
@@ -332,7 +400,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question6"
               value="3"
-              onChange={handleChange}
+              onChange={(event) => {
+                setGameARVR(event.target.value);
+              }}
             />
             <label htmlFor="3">3</label>
           </div>
@@ -341,7 +411,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question6"
               value="4"
-              onChange={handleChange}
+              onChange={(event) => {
+                setGameARVR(event.target.value);
+              }}
             />
             <label htmlFor="4">4</label>
           </div>
@@ -350,7 +422,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question6"
               value="5"
-              onChange={handleChange}
+              onChange={(event) => {
+                setGameARVR(event.target.value);
+              }}
             />
             <label htmlFor="5">5</label>
           </div>
@@ -367,7 +441,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question7"
               value="1"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCross(event.target.value);
+              }}
             />
             <label htmlFor="1">1</label>
           </div>
@@ -376,7 +452,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question7"
               value="2"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCross(event.target.value);
+              }}
             />
             <label htmlFor="2">2</label>
           </div>
@@ -385,7 +463,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question7"
               value="3"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCross(event.target.value);
+              }}
             />
             <label htmlFor="3">3</label>
           </div>
@@ -394,7 +474,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question7"
               value="4"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCross(event.target.value);
+              }}
             />
             <label htmlFor="4">4</label>
           </div>
@@ -403,7 +485,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question7"
               value="5"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCross(event.target.value);
+              }}
             />
             <label htmlFor="5">5</label>
           </div>
@@ -420,7 +504,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question8"
               value="1"
-              onChange={handleChange}
+              onChange={(event) => {
+                setBlockchain(event.target.value);
+              }}
             />
             <label htmlFor="1">1</label>
           </div>
@@ -429,7 +515,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question8"
               value="2"
-              onChange={handleChange}
+              onChange={(event) => {
+                setBlockchain(event.target.value);
+              }}
             />
             <label htmlFor="2">2</label>
           </div>
@@ -438,7 +526,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question8"
               value="3"
-              onChange={handleChange}
+              onChange={(event) => {
+                setBlockchain(event.target.value);
+              }}
             />
             <label htmlFor="3">3</label>
           </div>
@@ -447,7 +537,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question8"
               value="4"
-              onChange={handleChange}
+              onChange={(event) => {
+                setBlockchain(event.target.value);
+              }}
             />
             <label htmlFor="4">4</label>
           </div>
@@ -456,7 +548,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question8"
               value="5"
-              onChange={handleChange}
+              onChange={(event) => {
+                setBlockchain(event.target.value);
+              }}
             />
             <label htmlFor="5">5</label>
           </div>
@@ -473,7 +567,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question9"
               value="1"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCyberFirewall(event.target.value);
+              }}
             />
             <label htmlFor="1">1</label>
           </div>
@@ -482,7 +578,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question9"
               value="2"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCyberFirewall(event.target.value);
+              }}
             />
             <label htmlFor="2">2</label>
           </div>
@@ -491,7 +589,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question9"
               value="3"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCyberFirewall(event.target.value);
+              }}
             />
             <label htmlFor="3">3</label>
           </div>
@@ -500,7 +600,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question9"
               value="4"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCyberFirewall(event.target.value);
+              }}
             />
             <label htmlFor="4">4</label>
           </div>
@@ -509,7 +611,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question9"
               value="5"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCyberFirewall(event.target.value);
+              }}
             />
             <label htmlFor="5">5</label>
           </div>
@@ -526,7 +630,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question10"
               value="1"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCyberCloud(event.target.value);
+              }}
             />
             <label htmlFor="1">1</label>
           </div>
@@ -535,7 +641,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question10"
               value="2"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCyberCloud(event.target.value);
+              }}
             />
             <label htmlFor="2">2</label>
           </div>
@@ -544,7 +652,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question10"
               value="3"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCyberCloud(event.target.value);
+              }}
             />
             <label htmlFor="3">3</label>
           </div>
@@ -553,7 +663,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question10"
               value="4"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCyberCloud(event.target.value);
+              }}
             />
             <label htmlFor="4">4</label>
           </div>
@@ -562,7 +674,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question10"
               value="5"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCyberCloud(event.target.value);
+              }}
             />
             <label htmlFor="5">5</label>
           </div>
@@ -579,7 +693,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question11"
               value="1"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCompas(event.target.value);
+              }}
             />
             <label htmlFor="1">1</label>
           </div>
@@ -588,7 +704,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question11"
               value="2"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCompas(event.target.value);
+              }}
             />
             <label htmlFor="2">2</label>
           </div>
@@ -597,7 +715,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question11"
               value="3"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCompas(event.target.value);
+              }}
             />
             <label htmlFor="3">3</label>
           </div>
@@ -606,7 +726,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question11"
               value="4"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCompas(event.target.value);
+              }}
             />
             <label htmlFor="4">4</label>
           </div>
@@ -615,7 +737,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question11"
               value="5"
-              onChange={handleChange}
+              onChange={(event) => {
+                setCompas(event.target.value);
+              }}
             />
             <label htmlFor="5">5</label>
           </div>
@@ -632,7 +756,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question12"
               value="1"
-              onChange={handleChange}
+              onChange={(event) => {
+                setMultimedia(event.target.value);
+              }}
             />
             <label htmlFor="1">1</label>
           </div>
@@ -641,7 +767,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question12"
               value="2"
-              onChange={handleChange}
+              onChange={(event) => {
+                setMultimedia(event.target.value);
+              }}
             />
             <label htmlFor="2">2</label>
           </div>
@@ -650,7 +778,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question12"
               value="3"
-              onChange={handleChange}
+              onChange={(event) => {
+                setMultimedia(event.target.value);
+              }}
             />
             <label htmlFor="3">3</label>
           </div>
@@ -659,7 +789,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question12"
               value="4"
-              onChange={handleChange}
+              onChange={(event) => {
+                setMultimedia(event.target.value);
+              }}
             />
             <label htmlFor="4">4</label>
           </div>
@@ -668,7 +800,9 @@ const Rekomendasi = () => {
               type="radio"
               name="question12"
               value="5"
-              onChange={handleChange}
+              onChange={(event) => {
+                setMultimedia(event.target.value);
+              }}
             />
             <label htmlFor="5">5</label>
           </div>
@@ -684,8 +818,10 @@ const Rekomendasi = () => {
             <input
               type="radio"
               name="question13"
-              value="1"
-              onChange={handleChange}
+              value={1}
+              onChange={(event) => {
+                setParalel(event.target.value);
+              }}
             />
             <label htmlFor="1">1</label>
           </div>
@@ -693,8 +829,10 @@ const Rekomendasi = () => {
             <input
               type="radio"
               name="question13"
-              value="2"
-              onChange={handleChange}
+              value={2}
+              onChange={(event) => {
+                setParalel(event.target.value);
+              }}
             />
             <label htmlFor="2">2</label>
           </div>
@@ -702,8 +840,10 @@ const Rekomendasi = () => {
             <input
               type="radio"
               name="question13"
-              value="3"
-              onChange={handleChange}
+              value={3}
+              onChange={(event) => {
+                setParalel(event.target.value);
+              }}
             />
             <label htmlFor="3">3</label>
           </div>
@@ -711,8 +851,10 @@ const Rekomendasi = () => {
             <input
               type="radio"
               name="question13"
-              value="4"
-              onChange={handleChange}
+              value={4}
+              onChange={(event) => {
+                setParalel(event.target.value);
+              }}
             />
             <label htmlFor="4">4</label>
           </div>
@@ -720,14 +862,38 @@ const Rekomendasi = () => {
             <input
               type="radio"
               name="question13"
-              value="5"
-              onChange={handleChange}
+              value={5}
+              onChange={(event) => {
+                setParalel(event.target.value);
+              }}
             />
             <label htmlFor="5">5</label>
           </div>
         </div>
-        <button type="submit">Submit</button>
-      </form>
+        <button
+          onClick={() => {
+            setAlternativeData(
+              oop,
+              dataStruture,
+              algoritma,
+              computerSecurity,
+              cross,
+              blockchain,
+              game3d,
+              gameARVR,
+              compas,
+              multimedia,
+              paralel,
+              cyberFirewall,
+              cyberCloud
+            );
+
+            navigate("/result");
+          }}
+        >
+          Submit
+        </button>
+      </div>
     </>
   );
 };

@@ -29,6 +29,8 @@ function Detailtujuh() {
               <h1>Cross Platform Mobile Programming</h1>
             </div>
             <div className="details-cards-content">
+              <h2>Difficulty:</h2>
+              <div className="stars">★★★</div>
               <h2>Description:</h2>
               <p>
                 Cross-Platform Mobile Programming discusses how to buld a hybrid

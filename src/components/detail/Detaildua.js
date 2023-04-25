@@ -29,6 +29,8 @@ function Detaildua() {
               <h1>ARVR Game Design and Development</h1>
             </div>
             <div className="details-cards-content">
+              <h2>Difficulty:</h2>
+              <div className="stars">★★★</div>
               <h2>Description:</h2>
               <p>
                 This course discusses the process of making a digital game in
@@ -38,6 +40,13 @@ function Detaildua() {
                 using procedural content generation methods by utilizing Unity
                 Software.
               </p>
+              <h2>Prospect Career</h2>
+              <ul>
+                <li>Game Designer</li>
+                <li>Game Developer</li>
+                <li>Game Tester</li>
+                <li></li>
+              </ul>
             </div>
           </div>
         </div>

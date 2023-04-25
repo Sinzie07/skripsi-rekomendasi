@@ -95,6 +95,14 @@
   font-size: 25px;
 }
 
+.details-cards-content .stars {
+  display: inline-block;
+  font-size: 2rem;
+  color: #f0dd0f;
+  pointer-events: none;
+  padding-bottom: 1rem;
+}
+
 .details-cards-content p {
   font-size: 20px;
 }

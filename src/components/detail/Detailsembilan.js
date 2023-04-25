@@ -29,6 +29,8 @@ function Detailsembilan() {
               <h1>Paralel Processing</h1>
             </div>
             <div className="details-cards-content">
+              <h2>Difficulty:</h2>
+              <div className="stars">★★★★</div>
               <h2>Description:</h2>
               <p>
                 This course discusses the process of making a digital game in

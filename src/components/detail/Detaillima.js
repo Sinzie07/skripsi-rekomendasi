@@ -29,6 +29,8 @@ function Detaillima() {
               <h1>Computer and Society</h1>
             </div>
             <div className="details-cards-content">
+              <h2>Difficulty:</h2>
+              <div className="stars">★★★</div>
               <h2>Description:</h2>
               <p>
                 The rapid development of ICT has changed many activities in our

@@ -28,8 +28,9 @@ function Detailsatu() {
             <div className="details-cards-title">
               <h1>3D Game Design and Development</h1>
             </div>
-
             <div className="details-cards-content">
+              <h2>Difficulty:</h2>
+              <div className="stars">★★★</div>
               <h2>Description:</h2>
               <p>
                 This course discusses the process of making a digital game in

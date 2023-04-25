@@ -29,6 +29,8 @@ function Detailempat() {
               <h1>Cybersecurity: Cloud Security and Security Operation</h1>
             </div>
             <div className="details-cards-content">
+              <h2>Difficulty:</h2>
+              <div className="stars">★★★</div>
               <h2>Description:</h2>
               <p>
                 This course provides the sudent basic principles associated with

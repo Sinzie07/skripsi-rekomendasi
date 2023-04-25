@@ -29,6 +29,8 @@ function Detailenam() {
               <h1>Cybersecurity: Firewall Configuration and Management</h1>
             </div>
             <div className="details-cards-content">
+              <h2>Difficulty:</h2>
+              <div className="stars">★★★</div>
               <h2>Description:</h2>
               <p>
                 This course provides students with a general understanding of
