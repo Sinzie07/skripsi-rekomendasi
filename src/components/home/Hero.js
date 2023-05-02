@@ -10,7 +10,7 @@ const Hero = () => {
           <h1>Choose The Right Subject Of Interest</h1>
           <div className="button_container">
             <a href="rekomendasi" class="getrekomen">
-              <button className="main__btn">Get Rekomendasi</button>
+              <button className="main__btn">Get Recommendation</button>
             </a>
           </div>
           <Cards />
@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="card-image">
           <img src={solver}></img>
         </div>
-        <h1>Solusi Mahasiswa dalam memilih Mata Kuliah Peminatan</h1>
+        <h1>Student Solutions In Choosing Specialization Courses</h1>
       </div>
     </section>
   );

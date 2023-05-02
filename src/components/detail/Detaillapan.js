@@ -8,7 +8,7 @@ function Detaillapan() {
     <main className="details-page">
       <Navbar />
       <div className="details-information">
-        <h1>Details Peminatan</h1>
+        <h1>Elective Courses Details</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
             <div className="details-navigation">
@@ -44,6 +44,15 @@ function Detaillapan() {
                 elements and making interactive multimedia projects is done
                 using the Visual Scratch programming language as a multimedia
                 authoring tool.
+              </p>
+
+              <p className="prospek">
+                <h3>Prospect Career</h3>
+                <ul>
+                  <li>- Website Designer</li>
+                  <li>- Game Modeler</li>
+                  <li>- Illustrator / Animator</li>
+                </ul>
               </p>
             </div>
           </div>

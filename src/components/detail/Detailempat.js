@@ -8,7 +8,7 @@ function Detailempat() {
     <main className="details-page">
       <Navbar />
       <div className="details-information">
-        <h1>Details Peminatan</h1>
+        <h1>Elective Courses Details</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
             <div className="details-navigation">
@@ -51,6 +51,15 @@ function Detailempat() {
                 automation to reduce strain on analysts and execute the Security
                 Operation Center's mission to identify, ivestigate, and mitigate
                 threats.
+              </p>
+
+              <p className="prospek">
+                <h3>Prospect Career</h3>
+                <ul>
+                  <li>- Cloud Engineer</li>
+                  <li>- Security Architect</li>
+                  <li>- Chief Information Security Officer</li>
+                </ul>
               </p>
             </div>
           </div>

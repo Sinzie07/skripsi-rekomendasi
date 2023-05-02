@@ -1,15 +1,25 @@
-form {
+.container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding-top: 2rem;
+  height: auto;
+}
+
+.form {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .title-getrekomen {
   text-align: center;
   color: black;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 label {
@@ -32,9 +42,6 @@ label[htmlFor="questionName"] {
   margin-bottom: 0.5rem;
 }
 
-input[name="questionName"] {
-}
-
 input[type="radio"] {
   margin-right: 5px;
   width: 300px;
@@ -44,6 +51,7 @@ input[type="radio"] {
 
 button {
   padding: 10px 20px;
+  margin-top: 15px;
   margin-bottom: 15px;
   background-color: #4caf50;
   color: white;
@@ -61,4 +69,20 @@ button:hover {
 input[type="radio"]:checked + label {
   font-weight: bold;
   color: #4caf50;
+}
+
+.notes {
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.notes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
 }

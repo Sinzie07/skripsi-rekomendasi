@@ -8,7 +8,7 @@ function Detailtiga() {
     <main className="details-page">
       <Navbar />
       <div className="details-information">
-        <h1>Details Peminatan</h1>
+        <h1>Elective Courses Details</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
             <div className="details-navigation">
@@ -43,6 +43,14 @@ function Detailtiga() {
                 applications. The discussion covers current blockchain
                 applications with case reviews from payment systems to
                 non-fungible tokens.
+              </p>
+              <p className="prospek">
+                <h3>Prospect Career</h3>
+                <ul>
+                  <li>- Blockchain Engineer</li>
+                  <li>- Blockchain Architect</li>
+                  <li>- Technical Analyst</li>
+                </ul>
               </p>
             </div>
           </div>

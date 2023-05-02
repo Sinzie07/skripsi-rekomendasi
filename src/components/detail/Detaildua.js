@@ -8,7 +8,7 @@ function Detaildua() {
     <main className="details-page">
       <Navbar />
       <div className="details-information">
-        <h1>Details Peminatan</h1>
+        <h1>Elective Courses Details</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
             <div className="details-navigation">
@@ -40,13 +40,14 @@ function Detaildua() {
                 using procedural content generation methods by utilizing Unity
                 Software.
               </p>
-              <h2>Prospect Career</h2>
-              <ul>
-                <li>Game Designer</li>
-                <li>Game Developer</li>
-                <li>Game Tester</li>
-                <li></li>
-              </ul>
+              <p className="prospek">
+                <h3>Prospect Career</h3>
+                <ul>
+                  <li>- ARVR Game Developer</li>
+                  <li>- AR Graphics Architect</li>
+                  <li>- Software Engineer</li>
+                </ul>
+              </p>
             </div>
           </div>
         </div>

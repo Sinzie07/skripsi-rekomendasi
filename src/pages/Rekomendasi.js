@@ -46,18 +46,17 @@ const Rekomendasi = () => {
     <>
       <Navbar />
       <div>
-        <h1 className="title-getrekomen">Get Rekomendasi</h1>
+        <h1 className="title-getrekomen">Get Recommendation</h1>
       </div>
-      <div>
-        <div>
-          <label htmlFox="questionName">Nama Anda:</label>
+      <div className="container">
+        <div className="form">
+          <label htmlFox="questionName">Your Name:</label>
           <div className="pertanyaan-nama">
             <input type="text" name="questionName" />
           </div>
           <label htmlFox="question1">
             {" "}
-            Berapakah nilai anda dalam mata kuliah IF 433 Object Oriented
-            Programming?
+            What is your score in IF 433 Object Oriented Programming course?
           </label>
           <div>
             <input
@@ -114,13 +113,10 @@ const Rekomendasi = () => {
             />
             <label htmlFor="5">A</label>
           </div>
-        </div>
 
-        <div>
           <label htmlFox="question2">
             {" "}
-            Berapakah nilai anda dalam mata kuliah IF 230 Algorithm and Data
-            Structure?
+            What is your score in IF 230 Algorithm and Data Structure course?
           </label>
           <div>
             <input
@@ -177,13 +173,9 @@ const Rekomendasi = () => {
             />
             <label htmlFor="5">A</label>
           </div>
-        </div>
-
-        <div>
           <label htmlFox="question3">
             {" "}
-            Berapakah nilai anda dalam mata kuliah IF 432 Algorithm Design and
-            Analysis?
+            What is your score in IF 432 Algorithm Design and Analysis course?
           </label>
           <div>
             <input
@@ -240,12 +232,10 @@ const Rekomendasi = () => {
             />
             <label htmlFor="5">A</label>
           </div>
-        </div>
 
-        <div>
           <label htmlFox="question4">
             {" "}
-            Berapakah nilai anda dalam mata kuliah IF470 Computer Security?
+            What is your score in IF470 Computer Security course?
           </label>
           <div>
             <input
@@ -302,13 +292,22 @@ const Rekomendasi = () => {
             />
             <label htmlFor="5">A</label>
           </div>
-        </div>
 
-        <div>
+          <p className="notes">
+            <h3>Notes</h3>
+            Here are the value for the options below:
+            <ul>
+              <li>1 = Very Not Interested</li>
+              <li>2 = Not Intersted</li>
+              <li>3 = Normal</li>
+              <li>4 = Interested</li>
+              <li>5 = Very Interested</li>
+            </ul>
+          </p>
+
           <label htmlFor="question 5">
             {" "}
-            Berapakah nilai Minat terhadap Mata Kuliah Peminatan 3D Game Design
-            and Development?
+            How interested are you in 3D Game Design and Development courses?
           </label>
           <div>
             <input
@@ -365,13 +364,10 @@ const Rekomendasi = () => {
             />
             <label htmlFor="5">5</label>
           </div>
-        </div>
 
-        <div>
           <label htmlFor="question 6">
             {" "}
-            Berapakah nilai Minat terhadap Mata Kuliah Peminatan AR VR Game
-            Design and Development
+            How interested are you in AR VR Game Design and Development courses?
           </label>
           <div>
             <input
@@ -428,13 +424,10 @@ const Rekomendasi = () => {
             />
             <label htmlFor="5">5</label>
           </div>
-        </div>
 
-        <div>
           <label htmlFor="question 7">
             {" "}
-            Berapakah nilai Minat terhadap Mata Kuliah Peminatan Cross Platform
-            Mobile Programming?
+            How interested are you in Cross Platform Mobile Programming course?
           </label>
           <div>
             <input
@@ -491,13 +484,10 @@ const Rekomendasi = () => {
             />
             <label htmlFor="5">5</label>
           </div>
-        </div>
 
-        <div>
           <label htmlFor="question 8">
             {" "}
-            Berapakah nilai Minat terhadap Mata Kuliah Peminatan Blockchain and
-            Cryptocurrency?
+            How interested are you in Blockchain and Cryptocurrency course?
           </label>
           <div>
             <input
@@ -554,13 +544,11 @@ const Rekomendasi = () => {
             />
             <label htmlFor="5">5</label>
           </div>
-        </div>
 
-        <div>
           <label htmlFor="question 9">
             {" "}
-            Berapakah nilai Minat terhadap Mata Kuliah Peminatan Cybersecurity:
-            Firewall Configuration and Management?
+            How interested are you in Cybersecurity: Firewall Configuration and
+            Management course?
           </label>
           <div>
             <input
@@ -617,13 +605,11 @@ const Rekomendasi = () => {
             />
             <label htmlFor="5">5</label>
           </div>
-        </div>
 
-        <div>
           <label htmlFor="question 10">
             {" "}
-            Berapakah nilai Minat terhadap Mata Kuliah Peminatan Cybersecurity:
-            Cloud Security and Security Operation?
+            How interested are you in Cybersecurity: Cloud Security and Security
+            Operation course?
           </label>
           <div>
             <input
@@ -680,13 +666,10 @@ const Rekomendasi = () => {
             />
             <label htmlFor="5">5</label>
           </div>
-        </div>
 
-        <div>
           <label htmlFor="question 5">
             {" "}
-            Berapakah nilai Minat terhadap Mata Kuliah Peminatan Computer and
-            Society?
+            How interested are you in Computer and Society course?
           </label>
           <div>
             <input
@@ -743,13 +726,10 @@ const Rekomendasi = () => {
             />
             <label htmlFor="5">5</label>
           </div>
-        </div>
 
-        <div>
           <label htmlFor="question 12">
             {" "}
-            Berapakah nilai Minat terhadap Mata Kuliah Peminatan Multimedia
-            Concept?
+            How interested are you in Multimedia Concept course?
           </label>
           <div>
             <input
@@ -806,13 +786,10 @@ const Rekomendasi = () => {
             />
             <label htmlFor="5">5</label>
           </div>
-        </div>
 
-        <div>
           <label htmlFor="question 13">
             {" "}
-            Berapakah nilai Minat terhadap Mata Kuliah Peminatan Paralel
-            Processing?
+            How interested are you in Paralel Processing course?
           </label>
           <div>
             <input
@@ -870,6 +847,7 @@ const Rekomendasi = () => {
             <label htmlFor="5">5</label>
           </div>
         </div>
+
         <button
           onClick={() => {
             setAlternativeData(

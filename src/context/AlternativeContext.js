@@ -7,6 +7,30 @@ const AlternativeProvider = (props) => {
   const [alternative, setAlternative] = useState(alternatives);
   const { children } = props;
 
+  function setRanking(ranking) {
+    alternatives.forEach((item) => {
+      if (item.id === "cross") {
+        item.ranking = ranking["cross"];
+      } else if (item.id === "blockchain") {
+        item.ranking = ranking["blockchain"];
+      } else if (item.id === "cyber_firewall") {
+        item.ranking = ranking["cyber_firewall"];
+      } else if (item.id === "cyber_cloud") {
+        item.ranking = ranking["cyber_cloud"];
+      } else if (item.id === "compas") {
+        item.ranking = ranking["compas"];
+      } else if (item.id === "game3d") {
+        item.ranking = ranking["game3d"];
+      } else if (item.id === "gamearvr") {
+        item.ranking = ranking["gamearvr"];
+      } else if (item.id === "multimedia") {
+        item.ranking = ranking["multimedia"];
+      } else if (item.id === "paralel") {
+        item.ranking = ranking["paralel"];
+      }
+    });
+  }
+
   function setAlternativeData(
     oop,
     dataStructure,
@@ -66,7 +90,7 @@ const AlternativeProvider = (props) => {
 
   return (
     <AlternativeContext.Provider
-      value={{ alternative, setAlternative, setAlternativeData }}
+      value={{ alternative, setAlternative, setAlternativeData, setRanking }}
     >
       {children}
     </AlternativeContext.Provider>

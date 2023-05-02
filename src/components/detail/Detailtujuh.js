@@ -8,7 +8,7 @@ function Detailtujuh() {
     <main className="details-page">
       <Navbar />
       <div className="details-information">
-        <h1>Details Peminatan</h1>
+        <h1>Elective Courses Details</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
             <div className="details-navigation">
@@ -39,6 +39,15 @@ function Detailtujuh() {
                 also learn how to build mobile applications that can access
                 native device features, such as cameras, sensors, geolocation,
                 and access cloud-based databases.
+              </p>
+
+              <p className="prospek">
+                <h3>Prospect Career</h3>
+                <ul>
+                  <li>- Mobile App Developer</li>
+                  <li>- UI / UX Designer</li>
+                  <li>- Software Tester</li>
+                </ul>
               </p>
             </div>
           </div>

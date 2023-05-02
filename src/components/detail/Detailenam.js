@@ -8,7 +8,7 @@ function Detailenam() {
     <main className="details-page">
       <Navbar />
       <div className="details-information">
-        <h1>Details Peminatan</h1>
+        <h1>Elective Courses Details</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
             <div className="details-navigation">
@@ -43,6 +43,15 @@ function Detailenam() {
                 advanced content / user identification, quality of service,
                 global protection, monitoring / reporting, and high availability
                 using firewall technology.
+              </p>
+
+              <p className="prospek">
+                <h3>Prospect Career</h3>
+                <ul>
+                  <li>- Security Engineer</li>
+                  <li>- Auditor Security</li>
+                  <li>- Penetration Tester</li>
+                </ul>
               </p>
             </div>
           </div>

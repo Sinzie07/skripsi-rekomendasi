@@ -8,7 +8,7 @@ function Detailsatu() {
     <main className="details-page">
       <Navbar />
       <div className="details-information">
-        <h1>Details Peminatan</h1>
+        <h1>Elective Courses Details</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
             <div className="details-navigation">
@@ -40,6 +40,15 @@ function Detailsatu() {
                 digital game in three-dimensional form. Before entering into the
                 process of designing elements in a game, students will be taught
                 the concept of elements in a game.
+              </p>
+
+              <p className="prospek">
+                <h3>Prospect Career</h3>
+                <ul>
+                  <li>- 3D Game Developer</li>
+                  <li>- Game Artist</li>
+                  <li>- Game Tester</li>
+                </ul>
               </p>
             </div>
           </div>

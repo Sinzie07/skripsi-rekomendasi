@@ -8,7 +8,7 @@ function Detaillima() {
     <main className="details-page">
       <Navbar />
       <div className="details-information">
-        <h1>Details Peminatan</h1>
+        <h1>Elective Courses Details</h1>
         <div className="details-wrapper">
           <div className="details-photo-cards">
             <div className="details-navigation">
@@ -45,6 +45,15 @@ function Detaillima() {
                 professional, it is not enough just to master the technology but
                 also to understand the code ethics to prevent the misuse of ICT,
                 both for personal interests and the interests of other parties.
+              </p>
+
+              <p className="prospek">
+                <h3>Prospect Career</h3>
+                <ul>
+                  <li>- Project Manager</li>
+                  <li>- IT Consultant</li>
+                  <li>- Technopreneur</li>
+                </ul>
               </p>
             </div>
           </div>

@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AlternativeContext } from "../context/AlternativeContext";
 
 const Result = () => {
-  const { alternative } = useContext(AlternativeContext);
+  const { alternative, setRanking } = useContext(AlternativeContext);
 
   const bobotAhp = {
     prospek: 0.227628874,
@@ -69,19 +69,33 @@ const Result = () => {
     return ranking;
   }
 
+  const [topThree, setTopThree] = useState();
+
   useEffect(() => {
     const [hasil_s, nilai_s] = hitungnilaiSWP();
     const result = hitungRankingWP();
+    setRanking(result);
+    setTopThree(alternative.sort((a, b) => b.ranking - a.ranking));
 
     console.log(hasil_s);
     console.log(nilai_s);
     console.log(result);
+    console.log(alternative);
   }, []);
+  console.log(topThree);
 
   return (
     <main className="result-page">
       <div>
         <h1>Result</h1>
+        {topThree
+          .map((item, index) => (
+            <div>
+              <p>{item.title}</p>
+              <p>{item.desc}</p>
+            </div>
+          ))
+          .slice(0, 3)}
       </div>
     </main>
   );
