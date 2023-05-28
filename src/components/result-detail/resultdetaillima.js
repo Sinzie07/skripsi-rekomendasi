@@ -1,4 +1,4 @@
-import society from "../../images/computersociety.jpg";
+import society1 from "../../images/computersociety1.jpg";
 import "../../assets/pages/details.css";
 
 function resultdetaillima() {
@@ -13,7 +13,7 @@ function resultdetaillima() {
           <div className="details-photo-cards">
             <div
               className="photo-details"
-              style={{ backgroundImage: `url(${society})` }}
+              style={{ backgroundImage: `url(${society1})` }}
             >
               {""}
             </div>

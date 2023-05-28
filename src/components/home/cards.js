@@ -1,9 +1,9 @@
 import React from "react";
 import CardItem from "./CardItem";
 import "../../assets/pages/Cards.css";
-import crossmobile from "../../images/mobileprogramming.jpg";
-import cloudsecurity from "../../images/cloudsecurity.jpg";
-import computersociety from "../../images/computersociety.jpg";
+import crossmobile from "../../images/mobile1.jpg";
+import tridi from "../../images/3d2.jpeg";
+import firewall from "../../images/firewall1.png";
 
 function Cards() {
   return (
@@ -15,17 +15,17 @@ function Cards() {
             <CardItem
               src={crossmobile}
               text="Cross Platform Programming"
-              path="/information"
+              path="/detailmobile"
             />
             <CardItem
-              src={cloudsecurity}
+              src={tridi}
               text="3D Game Design and Development"
-              path="/information"
+              path="/detailtridi"
             />
             <CardItem
-              src={computersociety}
+              src={firewall}
               text="Cybersecurity: Firewall Configuration and Management"
-              path="/information"
+              path="/detailfirewall"
             />
           </ul>
         </div>

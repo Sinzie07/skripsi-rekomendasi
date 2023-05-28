@@ -1,4 +1,4 @@
-import konmul from "../../images/multimediaconcept.jpg";
+import konmul1 from "../../images/multimedia1.jpg";
 import "../../assets/pages/details.css";
 
 function resultdetaillapan() {
@@ -13,7 +13,7 @@ function resultdetaillapan() {
           <div className="details-photo-cards">
             <div
               className="photo-details"
-              style={{ backgroundImage: `url(${konmul})` }}
+              style={{ backgroundImage: `url(${konmul1})` }}
             >
               {""}
             </div>

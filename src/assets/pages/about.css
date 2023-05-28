@@ -1,27 +1,31 @@
 .about-page {
   min-height: 100vh;
   align-items: center;
-  background-color: burlywood;
+  background-image: url(../../images/background2.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .title-about {
   text-align: center;
+  color: #fff;
   padding-top: 5rem;
 }
 
 .content-about {
   text-align: center;
   padding-top: 5rem;
+  color: #fff;
 }
 
 .content-about h1 {
   font-size: 60px;
+  color: #fff;
 }
 
-.content-about h2 {
+.content-about .nama {
   font-size: 40px;
+  color: #fff;
   padding-top: 7.05rem;
   padding-bottom: 5rem;
 }

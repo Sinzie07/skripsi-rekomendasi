@@ -1,4 +1,4 @@
-import mobile from "../../images/mobileprogramming.jpg";
+import mobile1 from "../../images/mobile1.jpg";
 import "../../assets/pages/details.css";
 
 function resultdetailtujuh() {
@@ -13,7 +13,7 @@ function resultdetailtujuh() {
           <div className="details-photo-cards">
             <div
               className="photo-details"
-              style={{ backgroundImage: `url(${mobile})` }}
+              style={{ backgroundImage: `url(${mobile1})` }}
             >
               {""}
             </div>

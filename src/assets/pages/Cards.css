@@ -3,6 +3,7 @@
 }
 
 h2 {
+  color: #fff;
   text-align: center;
 }
 
@@ -12,7 +13,7 @@ h2 {
   align-items: center;
   max-width: 1120px;
   width: 90%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .cards__wrapper {
@@ -30,7 +31,7 @@ h2 {
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: black;
 }
 
 .cards__item__link {
@@ -81,7 +82,7 @@ h2 {
 }
 
 .cards__item__text {
-  color: #131313;
+  color: #fff;
   font-size: 18px;
   line-height: 24px;
 }

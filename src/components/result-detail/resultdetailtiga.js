@@ -1,4 +1,4 @@
-import blockchain from "../../images/blockchain.jpg";
+import blockchain1 from "../../images/blockchain1.jpg";
 import "../../assets/pages/details.css";
 
 function resultdetailtiga() {
@@ -10,7 +10,7 @@ function resultdetailtiga() {
           <div className="details-photo-cards">
             <div
               className="photo-details"
-              style={{ backgroundImage: `url(${blockchain})` }}
+              style={{ backgroundImage: `url(${blockchain1})` }}
             >
               {""}
             </div>

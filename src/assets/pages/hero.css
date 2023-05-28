@@ -1,8 +1,8 @@
 .hero {
-  min-height: 100vh;
+  min-height: 88.5vh;
   display: flex;
   align-items: center;
-  background-color: burlywood;
+  background-image: url(../../images/background4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -15,7 +15,7 @@
 
 .hero .content h1 {
   font-size: 3em;
-  color: #131313;
+  color: white;
   line-height: 1.2;
   padding-bottom: 30px;
 }
@@ -24,7 +24,7 @@
   font-size: 1.6rem;
   margin-top: 1rem;
   line-height: 1.4;
-  color: #131313;
+  color: white;
 }
 
 .hero .content .main__btn {
@@ -33,7 +33,7 @@
   background: green;
   padding: 20px 30px;
   border: none;
-  border-radius: 2px;
+  border-radius: 50px;
   cursor: pointer;
   transition: all 0.35s;
   outline: none;
@@ -48,7 +48,7 @@
 }
 
 .hero .content .main__btn:hover {
-  background: #131313;
+  background: black;
 }
 
 .button_container {
@@ -62,12 +62,18 @@
 }
 
 .right-hero .card-image {
-  width: 50%;
+  width: 100%;
   margin: auto;
+}
+
+.right-hero .card-image img {
+  width: 400px;
+  height: 500px;
 }
 
 .right-hero h1 {
   font-size: 50px;
+  color: #fff;
 }
 
 .home-photo-cards {

@@ -1,4 +1,6 @@
-import arvr from "../../images/arvrgame.png";
+import arvr1 from "../../images/arvr1.jpeg";
+import arvr2 from "../../images/arvr2.png";
+import arvr3 from "../../images/arvr3.jpg";
 import "../../assets/pages/details.css";
 import { Link } from "react-router-dom";
 
@@ -11,7 +13,7 @@ function resultdetaildua() {
           <div className="details-photo-cards">
             <div
               className="photo-details"
-              style={{ backgroundImage: `url(${arvr})` }}
+              style={{ backgroundImage: `url(${arvr2})` }}
             >
               {""}
             </div>

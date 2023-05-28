@@ -1,8 +1,60 @@
 import { useContext, useEffect, useState } from "react";
 import { AlternativeContext } from "../context/AlternativeContext";
+import "../../src/assets/pages/result.css";
+import axios from "axios";
+import Navbar from "../components/global/Navbar";
+import Footer from "../components/global/Footer";
+import mobile1 from "../images/mobile1.jpg";
 
 const Result = () => {
   const { alternative, setRanking } = useContext(AlternativeContext);
+  const [user, setUser] = useState("");
+
+  const storeUser = async () => {
+    try {
+      setUser(localStorage.getItem("user"));
+      if (user !== "") {
+        const user_id = await axios.post(
+          "https://backend-skripsi-production.up.railway.app/api/user",
+          {
+            name: user,
+          }
+        );
+        const userID = user_id.data.data._id;
+        console.log(userID);
+        return userID;
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const storeResult = async () => {
+    const userID = await storeUser();
+    try {
+      const id = userID;
+      const data = [];
+      topThree.slice(0, 3).map((item) => {
+        const obj = {
+          alternatif: item.title,
+          bobot_alternatif: item.ranking,
+          user_id: id,
+        };
+
+        // setHasil(...hasil, obj);
+        data.push(obj);
+        console.log(data);
+
+        console.log(userID);
+      });
+      await axios.post(
+        "https://backend-skripsi-production.up.railway.app/api/results",
+        data
+      );
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const bobotAhp = {
     prospek: 0.227628874,
@@ -69,35 +121,48 @@ const Result = () => {
     return ranking;
   }
 
-  const [topThree, setTopThree] = useState();
+  const [topThree, setTopThree] = useState([]);
 
   useEffect(() => {
     const [hasil_s, nilai_s] = hitungnilaiSWP();
     const result = hitungRankingWP();
     setRanking(result);
     setTopThree(alternative.sort((a, b) => b.ranking - a.ranking));
+    storeResult();
+  }, [alternative, hitungRankingWP, hitungnilaiSWP, user]);
 
-    console.log(hasil_s);
-    console.log(nilai_s);
-    console.log(result);
-    console.log(alternative);
-  }, []);
-  console.log(topThree);
+  console.log(alternative);
 
   return (
-    <main className="result-page">
-      <div>
-        <h1>Result</h1>
-        {topThree
-          .map((item, index) => (
-            <div>
-              <p>{item.title}</p>
-              <p>{item.desc}</p>
+    <div className="result-page">
+      <Navbar />
+      <div className="page-title">
+        <h1>RESULTS</h1>
+        <h2>
+          Based on your responses in the previous form, we have curated a list
+          of specialized courses tailored just for you!
+        </h2>
+      </div>
+      <div className="result-container">
+        {topThree ? (
+          topThree.slice(0, 3).map((item, index) => (
+            <div className="result-wrapper">
+              <div className="result-rank">{index + 1}</div>
+              <div className="result-image">
+                <img
+                  src={require(`../images/${item?.image}`)}
+                  alt="ResultImage"
+                />
+              </div>
+              <p>{item?.image}</p>
             </div>
           ))
-          .slice(0, 3)}
+        ) : (
+          <p>tidak ada data</p>
+        )}
       </div>
-    </main>
+      <Footer />
+    </div>
   );
 };
 

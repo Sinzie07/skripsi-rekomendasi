@@ -1,4 +1,4 @@
-import paralel from "../../images/paralelprocessing.png";
+import paralel1 from "../../images/paralel1.jpg";
 import "../../assets/pages/details.css";
 
 function resultdetailsembilan() {
@@ -13,7 +13,7 @@ function resultdetailsembilan() {
           <div className="details-photo-cards">
             <div
               className="photo-details"
-              style={{ backgroundImage: `url(${paralel})` }}
+              style={{ backgroundImage: `url(${paralel1})` }}
             >
               {""}
             </div>

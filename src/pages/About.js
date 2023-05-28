@@ -1,6 +1,6 @@
 import Navbar from "../components/global/Navbar";
 import "../../src/assets/pages/about.css";
-import sinzie from "../../src/images/sinzie.jpeg";
+import sinzie from "../../src/images/sinzie.png";
 import Footer from "../components/global/Footer";
 
 const About = () => {
@@ -14,7 +14,7 @@ const About = () => {
         <div className="card-image">
           <img src={sinzie}></img>
         </div>
-        <h2>Sinzie Winata</h2>
+        <h2 className="nama">Sinzie Winata</h2>
         <p>Teknik Informatika 2018</p>
         <p>Universitas Multimedia Nusantara</p>
       </div>

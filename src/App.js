@@ -27,6 +27,7 @@ import Detailresulttujuh from "./components/result-detail/resultdetailtujuh";
 import Detailresultlapan from "./components/result-detail/resultdetaillapan";
 import Detailresultsembilan from "./components/result-detail/resultdetailsembilan";
 import AlternativeProvider from "./context/AlternativeContext";
+import Contoh from "./components/detail/contoh";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/result" element={<Result />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contoh" element={<Contoh />} />
           <Route path="/information" element={<Information />} />
           <Route path="/rekomendasi" element={<Rekomendasi />} />
           <Route path="/login" element={<Login />} />

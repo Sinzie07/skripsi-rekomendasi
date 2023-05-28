@@ -1,3 +1,5 @@
+import mobileprogramming from "../../src/images/mobile1.jpg";
+
 <div className="peminatan-photo-cards">
   <div
     className="photo-peminatan"

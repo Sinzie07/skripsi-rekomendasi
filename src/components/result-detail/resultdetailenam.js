@@ -1,4 +1,4 @@
-import firewall from "../../images/firewall.jpg";
+import firewall1 from "../../images/firewall1.png";
 import "../../assets/pages/details.css";
 
 function resultdetailenam() {
@@ -13,7 +13,7 @@ function resultdetailenam() {
           <div className="details-photo-cards">
             <div
               className="photo-details"
-              style={{ backgroundImage: `url(${firewall})` }}
+              style={{ backgroundImage: `url(${firewall1})` }}
             >
               {""}
             </div>

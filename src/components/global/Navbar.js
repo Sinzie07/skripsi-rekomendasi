@@ -1,12 +1,16 @@
 import "../../assets/pages/navbar.css";
+import logo from "../../images/logowebsite.png";
 
 const Hero = () => {
   return (
     <nav className="navbar">
       <div className="navbar__container">
-        <a href="/" id="navbar__logo">
-          COLOR
-        </a>
+        <img
+          className="logo"
+          src={logo}
+          alt="logo"
+          onClick={() => (window.location.href = "/")}
+        ></img>
         <ul className="navbar__menu">
           <li className="navbar__item">
             <a href="/" className="navbar__links" id="home-page">

@@ -1,6 +1,6 @@
 import "../../assets/pages/hero.css";
 import Cards from "../../components/home/cards";
-import solver from "../../images/solver.png";
+import logoumn from "../../images/logoumn.png";
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
 
       <div className="right-hero">
         <div className="card-image">
-          <img src={solver}></img>
+          <img src={logoumn}></img>
         </div>
         <h1>Student Solutions In Choosing Specialization Courses</h1>
       </div>

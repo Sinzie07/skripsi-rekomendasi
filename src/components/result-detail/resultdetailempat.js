@@ -1,4 +1,5 @@
-import cloudsecurity from "../../images/cloudsecurity.jpg";
+import cloudsecurity1 from "../../images/cloudsecurity1.jpg";
+import cloudsecurity2 from "../../images/cloudsecurity2.jpg";
 import "../../assets/pages/details.css";
 
 function resultdetailempat() {
@@ -10,7 +11,7 @@ function resultdetailempat() {
           <div className="details-photo-cards">
             <div
               className="photo-details"
-              style={{ backgroundImage: `url(${cloudsecurity})` }}
+              style={{ backgroundImage: `url(${cloudsecurity1})` }}
             >
               {""}
             </div>

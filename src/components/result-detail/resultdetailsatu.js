@@ -1,4 +1,6 @@
-import tridigame from "../../images/3dgame.jpg";
+import tridigame1 from "../../images/3d1.jpg";
+import tridigame2 from "../../images/3d2.jpeg";
+import tridigame3 from "../../images/3d3.jpg";
 import "../../assets/pages/details.css";
 
 function resultdetailsatu() {
@@ -10,7 +12,7 @@ function resultdetailsatu() {
           <div className="details-photo-cards">
             <div
               className="photo-details"
-              style={{ backgroundImage: `url(${tridigame})` }}
+              style={{ backgroundImage: `url(${tridigame1})` }}
             >
               {""}
             </div>

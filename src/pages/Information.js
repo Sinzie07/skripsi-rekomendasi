@@ -1,14 +1,14 @@
 import Navbar from "../components/global/Navbar";
 import "../../src/assets/pages/information.css";
-import tridigame from "../images/3dgame.jpg";
-import arvr from "../images/arvrgame.png";
-import blockchain from "../images/blockchain.jpg";
-import cloudsecurity from "../images/cloudsecurity.jpg";
-import computersociety from "../images/computersociety.jpg";
-import firewall from "../images/firewall.jpg";
-import mobileprogramming from "../images/mobileprogramming.jpg";
-import multimediaconcept from "../images/multimediaconcept.jpg";
-import paralelprocessing from "../images/paralelprocessing.png";
+import tridigame from "../images/3d2.jpeg";
+import arvr from "../images/arvr1.jpeg";
+import blockchain from "../images/blockchain2.jpg";
+import cloudsecurity from "../images/cloudsecurity1.jpg";
+import computersociety from "../images/computersociety1.jpg";
+import firewall from "../images/firewall1.png";
+import mobileprogramming from "../images/mobile1.jpg";
+import multimediaconcept from "../images/multimedia1.jpg";
+import paralelprocessing from "../images/paralel1.jpg";
 import Footer from "../components/global/Footer";
 import { Link } from "react-router-dom";
 
@@ -18,6 +18,12 @@ const Information = () => {
       <Navbar />
       <div className="content-information">
         <h1>Information</h1>
+        <h2>Choose Your Specialization Courses</h2>
+        <h3>
+          There are several specialization courses available at UMN. Each course
+          has its strengths in its field. You can choose one of the
+          specializations below to find out more details.
+        </h3>
       </div>
       <div className="info-peminatan-wrappers">
         <Link to="/detailtridi">
@@ -143,7 +149,6 @@ const Information = () => {
             <div className="peminatan-photo-cards-title">
               <h3>Paralel Processing</h3>
             </div>
-            <div className="peminatan-photo-cards-content"></div>
           </div>
         </Link>
       </div>

@@ -21,9 +21,9 @@ export const alternatives = [
   {
     id: "cross",
     title: "Cross Mobile",
-    image: "../images/blockchain.jpg",
+    image: "mobile1.jpg",
     difficulty: 3,
-    desc: "Belajar blockchain emang gampang dan mudah sekali, bisa langsung kaya",
+    desc: "Cross-Platform Mobile Programming discusses how to build a hybrid mobile app using various web technologies that can run on Android and iOS platform using the same codebase. Students will also learn how to build mobile applications that can access native devie features, such as cameras, sensors, geolocation, and access cloud-based databases.",
     prospect: ["Blockchain developer", "data analyst", "crypto developer"],
     requirement: "oop",
     bobotWP: {
@@ -37,9 +37,9 @@ export const alternatives = [
   {
     id: "blockchain",
     title: "Blockchain",
-    image: "../images/3dgame.jpg",
+    image: "blockchain1.jpg",
     difficulty: 3,
-    desc: "Belajar 3D games emang gampang dan mudah sekali, bisa langsung kaya",
+    desc: "This course explores the potential use of blockchain technology by various stakeholders related to economics and finance. Starting wtih a review of the early application of the technology, Bitcoin cryptocurrency, students will gain an understanding of the comercial, technical, and public policy underpinnings of blokchain technology, distributed ledgers, and smart contract in open source and private applications. The discussion covers current blockchain applications with case reviews from payment systems to non-fungible tokens.",
     prospect: ["Blockchain developer", "data analyst", "crypto developer"],
     requirement: "data_structure",
     bobotWP: {
@@ -53,9 +53,9 @@ export const alternatives = [
   {
     id: "cyber_firewall",
     title: "Cyber Firewall",
-    image: "../images/blockchain.jpg",
+    image: "firewall1.png",
     difficulty: 3,
-    desc: "Belajar blockchain emang gampang dan mudah sekali, bisa langsung kaya",
+    desc: "This course provides students with a general understanding of how to install, configure, and manage firewalls for nework architecture defense. Students will learn theory and configuration steps for setting up security, networking, threat prevention, logging, and reporting features of firewall technology. Students will also learn the theory and advanced configurations features needed to set up traffic handling, advanced content / user identification, quality of service, global protection, monitoring / reporting, and high availability using firewall technology.",
     prospect: ["Blockchain developer", "data analyst", "crypto developer"],
     requirement: "computer_security",
     bobotWP: {
@@ -69,9 +69,9 @@ export const alternatives = [
   {
     id: "cyber_cloud",
     title: "Cyber Cloud",
-    image: "../images/blockchain.jpg",
+    image: "cloudsecurity1.jpg",
     difficulty: 3,
-    desc: "Belajar blockchain emang gampang dan mudah sekali, bisa langsung kaya",
+    desc: "This course provides the student basic principles associated with securing the cloud and SaaS-based applications through Secure Access Service Edge architecture and identify concepts required to recognize and potentially mitigate attacks against traditional and hybrid datacenters as well as mission critical infrastructure. Students will also learn how to initially setup and configure containers on a Docker bridge network and test the container security through the use of vulnerability scans and reports. This course also provides the student with an understanding of Security operations SecOps and the role it plays in protecting our digital way of life, for businesses and customers. Students will learn continuous improvement processes to collect high-fidelity intelligence, contextual data and automated prevention workflows that quickly identify and responds to fast-evolving threats. They will also learn how to leverage automation to reduce strain on analysts and execute the Security Operation Center's mission to identify, ivestigate, and mitigate threats.",
     prospect: ["Blockchain developer", "data analyst", "crypto developer"],
     requirement: "computer_security",
     bobotWP: {
@@ -85,9 +85,9 @@ export const alternatives = [
   {
     id: "game3d",
     title: "Game 3D",
-    image: "../images/blockchain.jpg",
+    image: "3d2.jpeg",
     difficulty: 3,
-    desc: "Belajar blockchain emang gampang dan mudah sekali, bisa langsung kaya",
+    desc: "This course discusses the process of making a digital game in 3-dimensional form, starting from the process of designing elements in a game and using three-dimensional assets from 3D software, to the process of implementing and programming a digital game in three-dimensional form. Before entering into the process of designing elements in a game, students will be taught the concept of elements in a game.",
     prospect: ["Blockchain developer", "data analyst", "crypto developer"],
     requirement: "oop",
     bobotWP: {
@@ -101,10 +101,9 @@ export const alternatives = [
   {
     id: "gamearvr",
     title: "Game ARVR",
-    image: "../images/blockchain.jpg",
+    image: "arvr1.jpeg",
     difficulty: 3,
-    desc: "Belajar blockchain emang gampang dan mudah sekali, bisa langsung kaya",
-    prospect: ["Blockchain developer", "data analyst", "crypto developer"],
+    desc: "This course discusses the process of making a digital game in 3-dimensional form by utilizing tools related to making game development such as smartphones to create Virtual Reality games or Augmented Reality games and also learning how to make games using procedural content generation methods by utilizing Unity Software.",
     requirement: "oop",
     bobotWP: {
       prospek: 4,
@@ -117,7 +116,7 @@ export const alternatives = [
   {
     id: "paralel",
     title: "Paralel",
-    image: "../images/blockchain.jpg",
+    image: "paralel1.jpg",
     difficulty: 3,
     desc: "Belajar blockchain emang gampang dan mudah sekali, bisa langsung kaya",
     prospect: ["Blockchain developer", "data analyst", "crypto developer"],
@@ -133,9 +132,9 @@ export const alternatives = [
   {
     id: "compas",
     title: "Computer & Society",
-    image: "../images/blockchain.jpg",
+    image: "blockchain.jpg",
     difficulty: 3,
-    desc: "Belajar blockchain emang gampang dan mudah sekali, bisa langsung kaya",
+    desc: "The rapid development of ICT has changed many activities in our lives. For example, in learning, playing, working, communication and doing business. Moreover, now social media has also been widely used in various ways. In addition to having a positive impact, the development of ICT also has a negative impact needs to be understood so that the community using ICT can minimize its impact. To that end, the Indonesian government has drawn up various laws, including the Law of Information and Electronic Transactions to regulate the use of ICT in society. As an ICT professional, it is not enough just to master the technology but also to understand the code ethics to prevent the misuse of ICT, both for personal interests and the interests of other parties.",
     prospect: ["Blockchain developer", "data analyst", "crypto developer"],
     requirement: "",
     bobotWP: {
@@ -149,9 +148,9 @@ export const alternatives = [
   {
     id: "multimedia",
     title: "Multimedia Concept",
-    image: "../images/blockchain.jpg",
+    image: "multimedia1.jpg",
     difficulty: 3,
-    desc: "Belajar blockchain emang gampang dan mudah sekali, bisa langsung kaya",
+    desc: "Multimedia  concept teaches student the basic understanding of the concept of using multimedia elements, and their processing in the real world. This course teaches various terms, definitions, technical meanings, and techniques for using multimedia elements consisting of text, image, audio, video, and animation. In addition, students are also taught to complete a multimedia project in the form of collaborative interactive multimedia applications the technique of using multimedia elements and making interactive multimedia projects is done using the Visual Scratch programming language as a multimedia authoring tool.",
     prospect: ["Blockchain developer", "data analyst", "crypto developer"],
     requirement: "",
     bobotWP: {
