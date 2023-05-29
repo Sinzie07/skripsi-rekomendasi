@@ -1,6 +1,6 @@
 .hero {
-  min-height: 88.5vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   background-image: url(../../images/background4.jpg);
   background-repeat: no-repeat;
@@ -8,16 +8,24 @@
 }
 
 .hero .content {
-  padding: 1.4rem 7%;
   display: flex;
-  max-width: 70rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
 }
 
 .hero .content h1 {
-  font-size: 3em;
-  color: white;
-  line-height: 1.2;
-  padding-bottom: 30px;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--white);
+}
+
+.hero .content h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--white);
 }
 
 .hero .content p {
@@ -30,7 +38,7 @@
 .hero .content .main__btn {
   font-size: 1.4rem;
   display: inline-block;
-  background: green;
+  background: #1b3b6f;
   padding: 20px 30px;
   border: none;
   border-radius: 50px;
@@ -43,12 +51,12 @@
 }
 
 .hero .content .main__btn .getrekomen {
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
 }
 
 .hero .content .main__btn:hover {
-  background: black;
+  background: #21295c;
 }
 
 .button_container {
@@ -57,7 +65,7 @@
 }
 
 .right-hero {
-  width: 650px;
+  border: 1px solid white;
   text-align: center;
 }
 
@@ -95,27 +103,36 @@
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 992px) {
-  .hero {
-    flex-direction: column;
-  }
-  .content,
-  .right-hero {
-    width: 100%;
-    text-align: center;
+@media only screen and (max-width: 767px) {
+  .hero .content h1 {
+    font-size: 3rem;
   }
 
-  .right-hero {
-    margin-top: 30px;
+  .hero .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero .content .main__btn {
+    font-size: 1.2rem;
+    display: inline-block;
+    background: #1b3b6f;
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.35s;
+    outline: none;
+    margin-top: 1rem;
+    width: 20rem;
   }
 }
 
-@media only screen and (max-width: 576px) {
-  .content {
-    padding: 0 20px;
+@media only screen and (max-width: 480px) {
+  .hero .content h1 {
+    font-size: 1.8rem;
   }
 
-  .right-hero {
-    margin-top: 20px;
+  .hero .content h2 {
+    font-size: 1rem;
   }
 }

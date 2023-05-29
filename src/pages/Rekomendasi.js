@@ -1,10 +1,7 @@
-import Navbar from "../components/global/Navbar";
 import { useNavigate } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import "../../src/assets/pages/rekomendasi.css";
 import { AlternativeContext } from "../context/AlternativeContext";
-import axios from "axios";
-import tridi from "../../src/images/3d1.jpg";
 
 const Rekomendasi = () => {
   const { alternative, setAlternativeData } = useContext(AlternativeContext);
@@ -50,15 +47,12 @@ const Rekomendasi = () => {
     localStorage.setItem("user", user);
   };
 
-  console.log(user);
-
   useEffect(() => {
     console.log(alternative);
   }, [alternative]);
 
   return (
     <>
-      <Navbar />
       <div className="rekomendasi-page">
         <h1 className="title-getrekomen">Get Recommendation</h1>
 

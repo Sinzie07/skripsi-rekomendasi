@@ -14,8 +14,6 @@ import Detailcard from "./DetailsCard";
 function Detaillima() {
   return (
     <div className="detatils-page">
-      <Navbar />
-
       <div className="details-container">
         <div className="details-konten">
           <div className="details-description">
@@ -72,7 +70,6 @@ function Detaillima() {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

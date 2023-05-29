@@ -1,10 +1,10 @@
 .navbar {
-  background: #131313;
+  background: #1b3b6f;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -13,6 +13,7 @@
 .navbar__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 80px;
   z-index: 1;
   width: 100%;
@@ -22,34 +23,50 @@
 }
 
 .logo {
-  display: inline-block;
-  width: auto;
-  height: auto;
+  display: flex;
+  width: 5rem;
+  height: 5rem;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
 .navbar__menu {
   display: flex;
+  gap: 5rem;
   align-items: center;
-  list-style: none;
-}
-
-.navbar__item {
-  height: 80px;
 }
 
 .navbar__links {
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 125px;
   text-decoration: none;
-  height: 100%;
+  transition: color 0.5s;
 }
 
 .navbar__links:hover {
-  color: #fcb045;
-  transition: all 0.3s ease;
+  color: #93c6d6;
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 767px) {
+  .navbar {
+    font-size: 1.4rem;
+  }
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    font-size: 1.2rem;
+  }
+  .navbar__menu {
+    gap: 2.5rem;
+  }
+  .logo {
+    width: 3rem;
+    height: 3rem;
+  }
 }

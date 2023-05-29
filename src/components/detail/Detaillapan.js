@@ -14,8 +14,6 @@ import Detailcard from "./DetailsCard";
 function Detaillapan() {
   return (
     <div className="detatils-page">
-      <Navbar />
-
       <div className="details-container">
         <div className="details-konten">
           <div className="details-description">
@@ -70,7 +68,6 @@ function Detaillapan() {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

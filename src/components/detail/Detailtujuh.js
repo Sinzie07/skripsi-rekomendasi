@@ -14,8 +14,6 @@ import Detailcard from "./DetailsCard";
 function Detailtujuh() {
   return (
     <div className="detatils-page">
-      <Navbar />
-
       <div className="details-container">
         <div className="details-konten">
           <div className="details-description">
@@ -66,7 +64,6 @@ function Detailtujuh() {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

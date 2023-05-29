@@ -11,7 +11,7 @@
 
 .details-konten {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .details-container .details-description {
@@ -20,7 +20,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 4.2rem;
+  padding: 3rem;
   color: #fff;
 }
 
@@ -114,11 +114,14 @@
 }
 
 .details-description p {
-  margin-bottom: 2rem;
-  font-size: 25px;
-  text-align: justify;
-  margin-left: 2rem;
+  font-size: 2rem;
+  text-align: center;
 }
+
+.details-description h2 {
+  margin-top: 2rem;
+}
+
 .details-stars {
   display: flex;
   justify-content: center;
@@ -155,6 +158,7 @@
 .cards_items {
   margin-bottom: 24px;
   display: flex;
+  gap: 2rem;
 }
 
 .cards_item {
@@ -166,73 +170,69 @@
 }
 
 .details-image {
-  flex: 1;
   display: flex;
   padding: 1rem;
-  margin: auto;
 }
 
-.details-image img {
-  width: 850px;
-  height: 650px;
-  margin-left: 1rem;
-}
-
-@media screen and (max-width: 1440px) {
-  .details-container {
-    height: auto;
-    width: auto;
-  }
-
-  .details-image {
-    width: 100%;
-    margin-top: 2rem;
-  }
-
-  .details-image img {
-    width: 100%;
-    margin: auto;
-  }
-
-  .details-konten {
-    flex-direction: column;
-  }
-
-  .details-description {
-    padding-top: 2rem;
+@media only screen and (max-width: 767px) {
+  .details-description h1 {
+    font-size: 3rem;
   }
 
   .details-description p {
-    margin: auto;
+    font-size: 2rem;
   }
 
-  .details-navigation {
-    font-size: 30px;
-    text-decoration: none;
+  .details-image {
+    display: none;
+  }
+
+  .details-navigation-nextbutton img,
+  .details-navigation-backbutton img,
+  .details-navigation-infobutton img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .details-navigation-nextbutton .next-text {
+    font-size: 2rem;
+  }
+
+  .details-navigation-backbutton .back-text {
+    font-size: 2rem;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .details-container {
-    height: auto;
-    width: auto;
+@media only screen and (max-width: 480px) {
+  .details-description h1 {
+    font-size: 2rem;
   }
 
-  .details-image {
-    width: 100%;
-    max-width: 530px;
-    margin: auto;
+  .details-description p {
+    font-size: 1.5rem;
   }
 
-  .details-konten {
+  .cards_items {
+    display: flex;
     flex-direction: column;
   }
 
-  .details-description {
-    padding-top: 2rem;
+  .details-navigation-nextbutton img,
+  .details-navigation-backbutton img,
+  .details-navigation-infobutton img {
+    width: 40px;
+    height: 40px;
   }
 
-  .details-image {
-    margin-top: 2rem;
+  .details-navigation-nextbutton .next-text {
+    font-size: 1rem;
+  }
+
+  .details-navigation-infobutton p {
+    font-size: 1rem;
+  }
+
+  .details-navigation-backbutton .back-text {
+    font-size: 1rem;
   }
 }

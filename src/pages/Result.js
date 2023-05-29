@@ -2,9 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AlternativeContext } from "../context/AlternativeContext";
 import "../../src/assets/pages/result.css";
 import axios from "axios";
-import Navbar from "../components/global/Navbar";
-import Footer from "../components/global/Footer";
-import mobile1 from "../images/mobile1.jpg";
+import { Link } from "react-router-dom";
 
 const Result = () => {
   const { alternative, setRanking } = useContext(AlternativeContext);
@@ -21,7 +19,6 @@ const Result = () => {
           }
         );
         const userID = user_id.data.data._id;
-        console.log(userID);
         return userID;
       }
     } catch (error) {
@@ -41,11 +38,7 @@ const Result = () => {
           user_id: id,
         };
 
-        // setHasil(...hasil, obj);
         data.push(obj);
-        console.log(data);
-
-        console.log(userID);
       });
       await axios.post(
         "https://backend-skripsi-production.up.railway.app/api/results",
@@ -91,20 +84,6 @@ const Result = () => {
       hasil[item.id] = nilai_s;
     });
 
-    // for (const key in matrix_wp) {
-    //   const item = matrix_wp[key];
-
-    //   const nilai_s =
-    //     Math.pow(item[0], bobotAhp.prospek) *
-    //     Math.pow(item[1], -bobotAhp.kesulitan) *
-    //     Math.pow(item[2], -bobotAhp.nilai_sebelum) *
-    //     Math.pow(item[3], bobotAhp.minat);
-
-    //   total += nilai_s;
-
-    //   hasil[key] = nilai_s;
-    // }
-
     return [hasil, total];
   }
 
@@ -131,11 +110,8 @@ const Result = () => {
     storeResult();
   }, [alternative, hitungRankingWP, hitungnilaiSWP, user]);
 
-  console.log(alternative);
-
   return (
     <div className="result-page">
-      <Navbar />
       <div className="page-title">
         <h1>RESULTS</h1>
         <h2>
@@ -146,7 +122,7 @@ const Result = () => {
       <div className="result-container">
         {topThree ? (
           topThree.slice(0, 3).map((item, index) => (
-            <div className="result-wrapper">
+            <Link to={item.href} className="result-wrapper">
               <div className="result-rank">{index + 1}</div>
               <div className="result-image">
                 <img
@@ -154,14 +130,13 @@ const Result = () => {
                   alt="ResultImage"
                 />
               </div>
-              <p>{item?.image}</p>
-            </div>
+              <p>{item.title}</p>
+            </Link>
           ))
         ) : (
           <p>tidak ada data</p>
         )}
       </div>
-      <Footer />
     </div>
   );
 };

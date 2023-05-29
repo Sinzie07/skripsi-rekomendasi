@@ -1,9 +1,7 @@
 import React from "react";
 import tridi from "../../images/3d2.jpeg";
 import "../../assets/pages/details.css";
-import Navbar from "../global/Navbar";
 import { Link } from "react-router-dom";
-import Footer from "../global/Footer";
 import arvr from "../../images/arvr2.png";
 import paralel from "../../images/paralel1.jpg";
 import grid from "../../images/grid.png";
@@ -15,8 +13,6 @@ import Detailcard from "./DetailsCard";
 function Detailsatu() {
   return (
     <div className="detatils-page">
-      <Navbar />
-
       <div className="details-container">
         <div className="details-konten">
           <div className="details-description">
@@ -68,7 +64,6 @@ function Detailsatu() {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

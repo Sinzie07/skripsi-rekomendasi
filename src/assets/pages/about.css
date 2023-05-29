@@ -8,7 +8,7 @@
 
 .title-about {
   text-align: center;
-  color: #fff;
+  color: var(--white);
   padding-top: 5rem;
 }
 
@@ -44,4 +44,18 @@
 .card-image img {
   width: 15rem;
   height: 20rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .title-about h1 {
+    font-size: 2rem;
+  }
+
+  .content-about .nama {
+    font-size: 2rem;
+  }
+
+  .content-about p {
+    font-size: 1.8rem;
+  }
 }

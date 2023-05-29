@@ -1,4 +1,3 @@
-import Navbar from "../components/global/Navbar";
 import "../../src/assets/pages/information.css";
 import tridigame from "../images/3d2.jpeg";
 import arvr from "../images/arvr1.jpeg";
@@ -9,13 +8,11 @@ import firewall from "../images/firewall1.png";
 import mobileprogramming from "../images/mobile1.jpg";
 import multimediaconcept from "../images/multimedia1.jpg";
 import paralelprocessing from "../images/paralel1.jpg";
-import Footer from "../components/global/Footer";
 import { Link } from "react-router-dom";
 
 const Information = () => {
   return (
     <main className="information-page">
-      <Navbar />
       <div className="content-information">
         <h1>Information</h1>
         <h2>Choose Your Specialization Courses</h2>
@@ -152,7 +149,6 @@ const Information = () => {
           </div>
         </Link>
       </div>
-      <Footer />
     </main>
   );
 };

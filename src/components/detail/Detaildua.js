@@ -13,8 +13,6 @@ import Detailcard from "./DetailsCard";
 function Detaildua() {
   return (
     <div className="detatils-page">
-      <Navbar />
-
       <div className="details-container">
         <div className="details-konten">
           <div className="details-description">
@@ -64,7 +62,6 @@ function Detaildua() {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
