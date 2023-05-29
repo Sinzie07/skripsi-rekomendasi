@@ -1,9 +1,9 @@
 .information-page {
-  min-height: 100vh;
   align-items: center;
   background-image: url(../../images/backgroundhome.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 2rem;
 }
 
 .content-information {
@@ -13,7 +13,6 @@
 }
 
 .content-information h1 {
-  padding-top: 20px;
   font-size: 50px;
   padding-bottom: 20px;
 }
@@ -22,11 +21,13 @@
   font-size: 30px;
 }
 
+.content-information h3 {
+  line-height: 3rem;
+}
+
 .info-peminatan-wrappers {
-  padding: 2rem;
+  padding: 2rem 0;
   display: grid;
-  margin: auto;
-  width: 90%;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
@@ -65,4 +66,36 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 767px) {
+  .content-information h1 {
+    font-size: 3.5rem;
+  }
+
+  .content-information h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .content-information h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .content-information h1 {
+    font-size: 2.5rem;
+  }
+
+  .content-information h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .content-information h3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }

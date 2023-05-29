@@ -14,8 +14,6 @@ import Detailcard from "./DetailsCard";
 function Detailsembilan() {
   return (
     <div className="detatils-page">
-      <Navbar />
-
       <div className="details-container">
         <div className="details-konten">
           <div className="details-description">
@@ -65,7 +63,6 @@ function Detailsembilan() {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

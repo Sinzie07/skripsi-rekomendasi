@@ -14,8 +14,6 @@ import Detailcard from "./DetailsCard";
 function Detailenam() {
   return (
     <div className="detatils-page">
-      <Navbar />
-
       <div className="details-container">
         <div className="details-konten">
           <div className="details-description">
@@ -69,7 +67,6 @@ function Detailenam() {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

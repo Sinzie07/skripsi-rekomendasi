@@ -10,25 +10,23 @@ function Cards() {
     <div className="cards">
       <h2>About The Recommendation</h2>
       <div className="cards__container">
-        <div className="cards__wrapper">
-          <ul className="cards__items">
-            <CardItem
-              src={crossmobile}
-              text="Cross Platform Programming"
-              path="/detailmobile"
-            />
-            <CardItem
-              src={tridi}
-              text="3D Game Design and Development"
-              path="/detailtridi"
-            />
-            <CardItem
-              src={firewall}
-              text="Cybersecurity: Firewall Configuration and Management"
-              path="/detailfirewall"
-            />
-          </ul>
-        </div>
+        <ul className="cards__items">
+          <CardItem
+            src={crossmobile}
+            text="Cross Platform Programming"
+            path="/detailmobile"
+          />
+          <CardItem
+            src={tridi}
+            text="3D Game Design and Development"
+            path="/detailtridi"
+          />
+          <CardItem
+            src={firewall}
+            text="Cybersecurity: Firewall Configuration and Management"
+            path="/detailfirewall"
+          />
+        </ul>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./components/global/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Result from "./pages/Result";
@@ -28,10 +29,12 @@ import Detailresultlapan from "./components/result-detail/resultdetaillapan";
 import Detailresultsembilan from "./components/result-detail/resultdetailsembilan";
 import AlternativeProvider from "./context/AlternativeContext";
 import Contoh from "./components/detail/contoh";
+import Footer from "./components/global/Footer";
 
 function App() {
   return (
     <AlternativeProvider>
+      <Navbar />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -72,6 +75,7 @@ function App() {
           />
         </Routes>
       </Router>
+      <Footer />
     </AlternativeProvider>
   );
 }
