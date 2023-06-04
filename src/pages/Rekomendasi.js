@@ -36,6 +36,7 @@ const Rekomendasi = () => {
   const [compas, setCompas] = useState(0);
   const [multimedia, setMultimedia] = useState(0);
   const [paralel, setParalel] = useState(0);
+  const [isToast, setIsToast] = useState(false);
 
   const [user, setUser] = useState("");
 
@@ -51,9 +52,31 @@ const Rekomendasi = () => {
     console.log(alternative);
   }, [alternative]);
 
+  const Toast = () => {
+    return (
+      <div className={`toast-container ${isToast ? "active" : ""}`}>
+        <div className="toast">
+          <button
+            onClick={() => {
+              setIsToast(false);
+            }}
+            className="toast-btn-dismiss"
+          >
+            X
+          </button>
+          <div className="toast-info-container">
+            <p className="warning-text">Warning</p>
+            <p className="toast-info-text">All Question Must Be Filled !!</p>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <>
       <div className="rekomendasi-page">
+        {isToast ? <Toast /> : null}
         <h1 className="title-getrekomen">Get Recommendation</h1>
 
         <div className="container">
@@ -902,24 +925,43 @@ const Rekomendasi = () => {
             </div>
             <button
               onClick={() => {
-                setAlternativeData(
-                  oop,
-                  dataStruture,
-                  algoritma,
-                  computerSecurity,
-                  cross,
-                  blockchain,
-                  game3d,
-                  gameARVR,
-                  compas,
-                  multimedia,
-                  paralel,
-                  cyberFirewall,
-                  cyberCloud
-                );
-                storeUserLocal();
+                if (
+                  user === "" ||
+                  oop === 0 ||
+                  dataStruture === 0 ||
+                  algoritma === 0 ||
+                  computerSecurity === 0 ||
+                  game3d === 0 ||
+                  gameARVR === 0 ||
+                  cross === 0 ||
+                  blockchain === 0 ||
+                  cyberFirewall === 0 ||
+                  cyberCloud === 0 ||
+                  compas === 0 ||
+                  multimedia === 0 ||
+                  paralel === 0
+                ) {
+                  setIsToast(true);
+                } else {
+                  setAlternativeData(
+                    oop,
+                    dataStruture,
+                    algoritma,
+                    computerSecurity,
+                    cross,
+                    blockchain,
+                    game3d,
+                    gameARVR,
+                    compas,
+                    multimedia,
+                    paralel,
+                    cyberFirewall,
+                    cyberCloud
+                  );
+                  storeUserLocal();
 
-                navigate("/result");
+                  navigate("/result");
+                }
               }}
             >
               Submit

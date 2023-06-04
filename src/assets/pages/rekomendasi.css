@@ -4,6 +4,7 @@
   background-color: #120c6e;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .container {
@@ -165,6 +166,81 @@ li {
   border-color: aliceblue;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+/* Toast styling */
+
+.toast-container {
+  position: fixed;
+}
+
+.toast-container.active {
+  right: 1rem;
+  top: 10rem;
+  transition: transform 0.6s ease-in-out;
+  animation: toast-in-right 0.7s;
+}
+
+.dismiss {
+  transition: transform 0.8s ease-out;
+  animation: toast-dismiss 1s;
+}
+
+/* Toast Animation */
+@keyframes toast-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes toast-dismiss {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.toast {
+  background-color: var(--yale-blue);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 15rem;
+  position: relative;
+}
+
+.toast-btn-dismiss {
+  position: absolute;
+  top: -1rem;
+  right: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sky-blue);
+}
+
+.toast-btn-dismiss:hover {
+  background-color: var(--space);
+}
+
+.toast-info-container {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.warning-text {
+  margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 480px) {
