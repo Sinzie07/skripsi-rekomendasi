@@ -28,7 +28,7 @@
 }
 
 .form p {
-  color: #fff;
+  color: #000;
   font-weight: bold;
   padding-bottom: 1rem;
 }
@@ -113,7 +113,7 @@ input[type="radio"]:checked {
   cursor: pointer;
 }
 
-button:hover {
+.button-rekomendasi:hover {
   background: linear-gradient(90deg, var(--space), var(--yale-blue));
 }
 
@@ -138,6 +138,7 @@ input[type="radio"]:checked + label {
   list-style: none;
   padding: 0;
   margin: 0;
+  color: #000;
 }
 
 li {
