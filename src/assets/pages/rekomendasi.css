@@ -100,7 +100,7 @@ input[type="radio"]:checked {
   font-size: 1.4rem;
   color: #131313;
 }
-button {
+.button-rekomendasi {
   padding: 10px 20px;
   margin-top: 15px;
   margin-bottom: 15px;

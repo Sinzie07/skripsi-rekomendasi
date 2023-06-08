@@ -924,6 +924,7 @@ const Rekomendasi = () => {
               </div>
             </div>
             <button
+              className="button-rekomendasi"
               onClick={() => {
                 if (
                   user === "" ||
