@@ -1,7 +1,7 @@
 .rekomendasi-page {
   min-height: 100vh;
   align-items: center;
-  background-color: #120c6e;
+  background-color: var(--space);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -21,7 +21,7 @@
   width: 100%;
   padding: 10px;
   border: 1px solid #131313;
-  background-color: #5e72e8;
+  background-color: var(--sky-blue);
   border-radius: 10px;
   text-align: center;
   box-shadow: 0px 0px 5px 0px rgba (0, 0, 0, 0.3);
@@ -41,7 +41,7 @@
 }
 
 label {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -56,10 +56,16 @@ label {
   width: 100%;
 }
 
+.pertanyaan-nama input {
+  width: 50%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
 label[htmlFox="questionName"] {
   color: #131313;
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 input[type="radio"] {
@@ -91,14 +97,14 @@ input[type="radio"]:checked {
 .radio-button-jawaban label {
   order: -1;
   margin-left: 5px;
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #131313;
 }
 button {
   padding: 10px 20px;
   margin-top: 15px;
   margin-bottom: 15px;
-  background-color: #4caf50;
+  background: linear-gradient(90deg, var(--yale-blue), var(--space));
   color: white;
   border: none;
   border-radius: 20px;
@@ -108,7 +114,7 @@ button {
 }
 
 button:hover {
-  background-color: #3e8e41;
+  background: linear-gradient(90deg, var(--space), var(--yale-blue));
 }
 
 input[type="radio"]:checked + label {
